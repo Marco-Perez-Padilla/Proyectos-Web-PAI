@@ -1,0 +1,72 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main 
+
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm install
+
+      - name: Run tests and build
+        run: |
+          npm run test
+          npm run build:all
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm install
+      - run: npm run build:all
+
+      - name: Deploy to gh-pages (clean force push)
+        run: |
+          # crear rama huérfana local
+          rm -rf temp-gh
+          mkdir temp-gh
+          cp -r dist/* temp-gh/
+
+          cd temp-gh
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b gh-pages
+
+          git add .
+          git commit -m "Deploy dist to gh-pages"
+
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
+          git push origin gh-pages --force

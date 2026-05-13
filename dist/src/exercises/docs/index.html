@@ -1,0 +1,187 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>Práctica 13 - Balatro &amp; Poker - v1.0.0</title><meta name="description" content="Documentation for Práctica 13 - Balatro & Poker - v1.0.0"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base=".">
+<div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<div class="field">
+<div id="tsd-toolbar-links"></div></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">Práctica 13 - Balatro &amp; Poker - v1.0.0</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
+<div class="container container-main">
+<div class="col-8 col-content">
+<div class="tsd-page-title">
+<h2>Práctica 13 - Balatro &amp; Poker - v1.0.0</h2></div>
+<div class="tsd-panel tsd-typography"><p><a href="https://classroom.github.com/a/5VpVYbYr"><img src="https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg" alt="Review Assignment Due Date"></a>
+<a href="https://classroom.github.online_ide?assignment_repo_id=23565016&assignment_repo_type=AssignmentRepo"><img src="https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg" alt="Open in Visual Studio Code"></a></p>
+
+<a href="#práctica-13--balatro-small-blind" id="práctica-13--balatro-small-blind" style="color: inherit; text-decoration: none;">
+  <h1>Práctica 13 — Balatro (Small Blind)</h1>
+</a>
+<p><strong>Marco Pérez Padilla</strong> · Programación de Aplicaciones Interactivas · ULL</p>
+<hr>
+
+<a href="#descripción" id="descripción" style="color: inherit; text-decoration: none;">
+  <h2>Descripción</h2>
+</a>
+<p>Implementación de una versión simplificada del juego <strong>Balatro</strong>, centrada exclusivamente en el primer nivel (<em>Small Blind</em>).<br>La aplicación es una SPA (<em>Single Page Application</em>) desarrollada en TypeScript puro bajo el patrón Modelo‑Vista‑Controlador (MVC).<br>La interfaz sigue el diseño de la aplicación de referencia, usando exclusivamente el framework <strong>Bulma</strong> personalizado con los colores institucionales y la tipografía de la Universidad de La Laguna.</p>
+<p>En esta versión el jugador recibe 8 cartas, selecciona de 1 a 5 para formar manos de póker, juega hasta 3 manos y dispone de 3 descartes para intentar alcanzar los 300 puntos exigidos por el <em>Small Blind</em>.<br>La puntuación de cada mano se calcula según las reglas oficiales: (<code>chips base de la mano</code> + <code>suma de valores de las cartas seleccionadas</code>) × <code>multiplicador base</code>.<br>Se reconocen todas las manos de póker: <em>High Card</em>, <em>Pair</em>, <em>Two Pair</em>, <em>Three of a Kind</em>, <em>Straight</em>, <em>Flush</em>, <em>Full House</em>, <em>Four of a Kind</em> y <em>Straight Flush</em>, con el valor correcto de fichas y multiplicador para cada una.</p>
+<hr>
+
+<a href="#patrones-de-diseño-aplicados" id="patrones-de-diseño-aplicados" style="color: inherit; text-decoration: none;">
+  <h2>Patrones de diseño aplicados</h2>
+</a>
+<table>
+<thead>
+<tr>
+<th>Patrón</th>
+<th>Clase / Módulo</th>
+<th>Responsabilidad</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MVC</td>
+<td><code>BalatroModel</code>, <code>BalatroView</code>, <code>BalatroController</code></td>
+<td>Separación estricta de lógica, renderizado y control de eventos.</td>
+</tr>
+<tr>
+<td>Dependency Inversion</td>
+<td><code>interfaces.ts</code> (<code>ICard</code>, <code>IScorePreview</code>, <code>IRoundConfig</code>)</td>
+<td>El Modelo y la Vista dependen de abstracciones, nunca de implementaciones concretas.</td>
+</tr>
+<tr>
+<td>Composición</td>
+<td><code>Deck</code> ← <code>Card</code>, <code>BalatroModel</code> ← <code>Deck</code>, <code>BalatroView</code> ← <code>CanvasRenderer</code></td>
+<td>Cada clase es dueña de sus componentes y controla su ciclo de vida.</td>
+</tr>
+<tr>
+<td>SRP en helpers</td>
+<td><code>HtmlElementManager</code>, <code>CanvasRenderer</code></td>
+<td>Cada clase auxiliar tiene una única responsabilidad bien definida.</td>
+</tr>
+</tbody></table>
+<hr>
+
+<a href="#instalación-y-uso" id="instalación-y-uso" style="color: inherit; text-decoration: none;">
+  <h2>Instalación y uso</h2>
+</a>
+
+<a href="#requisitos-previos" id="requisitos-previos" style="color: inherit; text-decoration: none;">
+  <h3>Requisitos previos</h3>
+</a>
+<ul>
+<li>Node.js (v18 o superior)</li>
+<li>npm</li>
+</ul>
+
+<a href="#instalación-de-dependencias" id="instalación-de-dependencias" style="color: inherit; text-decoration: none;">
+  <h3>Instalación de dependencias</h3>
+</a>
+<pre><code class="language-bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">install</span>
+</code></pre>
+
+<a href="#tests-compilación-documentación-y-previsualización-local" id="tests-compilación-documentación-y-previsualización-local" style="color: inherit; text-decoration: none;">
+  <h3>Tests, compilación, documentación y previsualización local</h3>
+</a>
+<pre><code class="language-bash"><span class="hl-3"># Ejecutar todos los tests unitarios (Jest)</span><br/><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">test</span><br/><br/><span class="hl-3"># Compilar TypeScript y empaquetar con Vite</span><br/><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">run</span><span class="hl-1"> </span><span class="hl-2">build:vite</span><br/><br/><span class="hl-3"># Generar documentación con TypeDoc</span><br/><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">run</span><span class="hl-1"> </span><span class="hl-2">docs</span><br/><br/><span class="hl-3"># Construir todo (compilación + documentación)</span><br/><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">run</span><span class="hl-1"> </span><span class="hl-2">build:all</span><br/><br/><span class="hl-3"># Servidor de desarrollo local (Vite)</span><br/><span class="hl-0">npx</span><span class="hl-1"> </span><span class="hl-2">vite</span>
+</code></pre>
+<p>Tras ejecutar <code>npx vite</code>, abre la URL que muestra la consola (normalmente <a href="http://localhost:5173">http://localhost:5173</a>) para jugar.</p>
+<hr>
+
+<a href="#despliegue-en-github-pages" id="despliegue-en-github-pages" style="color: inherit; text-decoration: none;">
+  <h2>Despliegue en GitHub Pages</h2>
+</a>
+<p>El repositorio incluye un workflow de GitHub Actions (<code>.github/workflows/deploy.yml</code>) que se ejecuta automáticamente al hacer push a la rama <code>main</code>.<br>El workflow:</p>
+<ol>
+<li>Instala las dependencias.</li>
+<li>Ejecuta <code>npm run build:all</code> (compilación TypeScript + Vite + documentación TypeDoc).</li>
+<li>Despliega el contenido de la carpeta <code>dist/</code> a la rama <code>gh-pages</code> mediante un push forzado limpio.</li>
+</ol>
+
+<a href="#configuración-necesaria" id="configuración-necesaria" style="color: inherit; text-decoration: none;">
+  <h3>Configuración necesaria</h3>
+</a>
+<ul>
+<li>En el fichero <code>vite.config.js</code>, la propiedad <code>base</code> debe coincidir con el nombre del repositorio en GitHub Pages (en este caso <code>/25-26-pai-p13-balatro-Marco-Perez-Padilla/</code>).</li>
+<li>En los ajustes del repositorio (<strong>Settings → Pages</strong>), la fuente debe estar configurada como <em>Deploy from a branch</em> y seleccionar la rama <code>gh-pages</code>, carpeta <code>/ (root)</code>.</li>
+</ul>
+<hr>
+
+<a href="#principios-solid-y-buenas-prácticas" id="principios-solid-y-buenas-prácticas" style="color: inherit; text-decoration: none;">
+  <h2>Principios SOLID y buenas prácticas</h2>
+</a>
+<p>El desarrollo aplica rigurosamente los principios <strong>YAGNI</strong>, <strong>KISS</strong>, <strong>DRY</strong> y <strong>SOLID</strong>:</p>
+<ul>
+<li><p><strong>SRP</strong>: Cada clase tiene una única razón de cambio:</p>
+<ul>
+<li><code>BalatroModel</code>: estado del juego y reglas.</li>
+<li><code>BalatroView</code>: manipulación del DOM y renderizado del canvas.</li>
+<li><code>BalatroController</code>: coordinación entre modelo y vista.</li>
+<li><code>HandEvaluator</code>: lógica pura de evaluación de manos de póker.</li>
+<li><code>Deck</code>, <code>Card</code>: gestión del mazo.</li>
+<li><code>CanvasRenderer</code>, <code>HtmlElementManager</code>: responsabilidades auxiliares de dibujo y acceso al DOM.</li>
+</ul>
+</li>
+<li><p><strong>OCP</strong>: Se pueden añadir nuevas manos de póker o modificar la interfaz sin cambiar el modelo.</p>
+</li>
+<li><p><strong>LSP</strong>: <code>Card</code> implementa <code>ICard</code> sin alterar el contrato, y <code>BalatroController</code> interactúa con el modelo únicamente a través de métodos públicos.</p>
+</li>
+<li><p><strong>ISP</strong>: Las interfaces (<code>ICard</code>, <code>IScorePreview</code>, <code>IRoundConfig</code>) son pequeñas y específicas, forzando a que cada consumidor solo dependa de lo que necesita.</p>
+</li>
+<li><p><strong>DIP</strong>: El modelo y la vista dependen de abstracciones (interfaces), y el controlador invoca métodos del modelo sin conocer su implementación interna.</p>
+</li>
+</ul>
+<p>No se ha incluido ninguna funcionalidad fuera del alcance del Small Blind (<strong>YAGNI</strong>). El código es directo, con nombres significativos (<strong>KISS</strong>), y no hay lógica duplicada (<strong>DRY</strong>).</p>
+<hr>
+
+<a href="#autor" id="autor" style="color: inherit; text-decoration: none;">
+  <h2>Autor</h2>
+</a>
+<p><strong>Marco Pérez Padilla</strong> — <a href="mailto:alu0101469348@ull.edu.es">alu0101469348@ull.edu.es</a></p>
+<hr>
+
+<a href="#licencia" id="licencia" style="color: inherit; text-decoration: none;">
+  <h2>Licencia</h2>
+</a>
+<p>Este proyecto es de código abierto y se distribuye bajo la <a href="LICENSE">Licencia MIT</a>.</p>
+</div></div>
+<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<nav class="tsd-navigation primary">
+<details class="tsd-index-accordion" open><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Modules</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li class="current selected"><a href="modules.html">Práctica 13 -<wbr/> <wbr/>Balatro &amp; <wbr/>Poker -<wbr/> v1.0.0</a>
+<ul>
+<li class="tsd-kind-module"><a href="modules/Poker1_canvas_renderer.html">Poker1/canvas-<wbr/>renderer</a></li>
+<li class="tsd-kind-module"><a href="modules/Poker1_card.html">Poker1/card</a></li>
+<li class="tsd-kind-module"><a href="modules/Poker1_deck.html">Poker1/deck</a></li>
+<li class="tsd-kind-module"><a href="modules/Poker1_html_element_manager.html">Poker1/html-<wbr/>element-<wbr/>manager</a></li>
+<li class="tsd-kind-module"><a href="modules/Poker1_interfaces.html">Poker1/interfaces</a></li>
+<li class="tsd-kind-module"><a href="modules/Poker1_poker.html">Poker1/poker</a></li>
+<li class="tsd-kind-module"><a href="modules/Poker1_poker_controller.html">Poker1/poker-<wbr/>controller</a></li>
+<li class="tsd-kind-module"><a href="modules/Poker1_poker_model.html">Poker1/poker-<wbr/>model</a></li>
+<li class="tsd-kind-module"><a href="modules/Poker1_poker_view.html">Poker1/poker-<wbr/>view</a></li>
+<li class="tsd-kind-module"><a href="modules/home_work_balatro.html">home-<wbr/>work/balatro</a></li>
+<li class="tsd-kind-module"><a href="modules/home_work_balatro_controller.html">home-<wbr/>work/balatro-<wbr/>controller</a></li>
+<li class="tsd-kind-module"><a href="modules/home_work_balatro_model.html">home-<wbr/>work/balatro-<wbr/>model</a></li>
+<li class="tsd-kind-module"><a href="modules/home_work_balatro_view.html">home-<wbr/>work/balatro-<wbr/>view</a></li>
+<li class="tsd-kind-module"><a href="modules/home_work_canvas_renderer.html">home-<wbr/>work/canvas-<wbr/>renderer</a></li>
+<li class="tsd-kind-module"><a href="modules/home_work_card.html">home-<wbr/>work/card</a></li>
+<li class="tsd-kind-module"><a href="modules/home_work_deck.html">home-<wbr/>work/deck</a></li>
+<li class="tsd-kind-module"><a href="modules/home_work_hand_evaluator.html">home-<wbr/>work/hand-<wbr/>evaluator</a></li>
+<li class="tsd-kind-module"><a href="modules/home_work_html_element_manager.html">home-<wbr/>work/html-<wbr/>element-<wbr/>manager</a></li>
+<li class="tsd-kind-module"><a href="modules/home_work_interfaces.html">home-<wbr/>work/interfaces</a></li></ul></li></ul></div></details></nav></div></div>
+<div class="container tsd-generator">
+<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
+<div class="overlay"></div><script src="assets/main.js"></script></body></html>

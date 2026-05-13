@@ -1,0 +1,57 @@
+<!--  
+   Universidad de La Laguna
+	 Escuela Superior de Ingeniería y Tecnología
+	 Grado en Ingeniería Informática
+	 Programación de Aplicaciones Interactivas
+
+   @author Marco Pérez Padilla
+   @since May 4, 2026
+	 @description Html para el juego Poker, con arquitectura Modelo-Vista-Controlador.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marco Pérez Padilla - Poker 2</title>
+  <link rel="stylesheet" href="/ull-bulma.css">
+  <script type="module" defer src="./poker.ts"></script>
+</head>
+<body>
+  <!-- Header -->
+  <section class="hero is-primary">
+    <div class="hero-body" style="padding: 0.75rem 1.5rem;">
+      <div class="container">
+        <h1 class="title has-text-white">PAI Práctica 13 - Poker 2</h1>
+        <h2 class="subtitle has-text-white-ter">Marco Pérez Padilla — Grado en Ingeniería Informática · ULL</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- Block 1: Hands -->
+      <div class="box">
+        <canvas id="hand1Canvas" width="900" height="180"></canvas>
+        <canvas id="hand2Canvas" width="900" height="180"></canvas>
+      </div>
+      <!-- Block 2:Results Preview -->
+      <div class="box">
+        <p class="heading">Results</p>
+        <p id="hand1Game" class="subtitle is-6 has-text-light">-</p>
+        <p id="hand2Game" class="subtitle is-6 has-text-light">-</p>
+        <p id="winner" class="subtitle is-6 has-text-light">-</p>
+      </div>
+      <!-- Block 3: Game control -->
+      <div class="box">
+        <div class="buttons">
+          <button id="newHand1" class="button is-primary">New Hand 1</button>
+          <button id="newHand2" class="button is-warning">New Hand 2</button>
+        </div>
+        <p id="statusMessage" class="has-text-centered"></p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

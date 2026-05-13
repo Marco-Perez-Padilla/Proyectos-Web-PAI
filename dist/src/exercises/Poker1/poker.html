@@ -1,0 +1,63 @@
+<!--  
+   Universidad de La Laguna
+	 Escuela Superior de Ingeniería y Tecnología
+	 Grado en Ingeniería Informática
+	 Programación de Aplicaciones Interactivas
+
+   @author Marco Pérez Padilla
+   @since May 4, 2026
+	 @description Html para el juego Poker, con arquitectura Modelo-Vista-Controlador.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marco Pérez Padilla - Poker</title>
+  <link rel="stylesheet" href="/25-26-pai-p13-balatro-Marco-Perez-Padilla/ull-bulma.css">
+  <script type="module" crossorigin src="/25-26-pai-p13-balatro-Marco-Perez-Padilla/assets/poker1-DwC1x4np.js"></script>
+  <link rel="modulepreload" crossorigin href="/25-26-pai-p13-balatro-Marco-Perez-Padilla/assets/modulepreload-polyfill-BxR_cmXS.js">
+</head>
+<body>
+  <!-- Header -->
+  <section class="hero is-primary">
+    <div class="hero-body" style="padding: 0.75rem 1.5rem;">
+      <div class="container">
+        <h1 class="title has-text-white">PAI Práctica 13 - Poker</h1>
+        <h2 class="subtitle has-text-white-ter">Marco Pérez Padilla — Grado en Ingeniería Informática · ULL</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Block 1: Points -->
+      <div class="box">
+        <div class="columns is-mobile">
+          <div class="column">
+            <p class="heading">Points</p>
+            <p id="pointsDisplay" class="title is-5 has-text-white">0</p>
+          </div>
+        </div>
+      </div>
+      <!-- Block 2: Current Hand -->
+      <div class="box">
+        <canvas id="handCanvas" width="900" height="180"></canvas>
+      </div>
+
+      <!-- Block 3: Game control -->
+      <div class="box">
+        <div class="buttons">
+          <button id="playGreaterButton" class="button is-primary">Mayor</button>
+          <button id="playLessThanButton" class="button is-warning">Menor</button>
+          <button id="newGamebutton" class="button is-info">Nuevo Juego</button>
+        </div>
+        <p id="statusMessage" class="has-text-centered"></p>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
