@@ -1,0 +1,59 @@
+{
+  "name": "Monorepo de PAI",
+  "version": "1.0.0",
+  "description": "Monorepo de PAI con prácticas de Canvas API, Animaciones y MVC Events",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "docs": "typedoc",
+    "docs:serve:bg": "nohup npx http-server docs -p 8081 > docs-server.log 2>&1 &",
+    "game:serve:bg": "nohup npx http-server . -p 8080 > game-server-log 2>&1 &",
+    "push": "rm *~; git pull; git add . ; git commit -m 'Code improvement'; git push",
+    "pull": "git pull",
+    "test": "jest",
+    "lint:ci": "eslint . --ext .tsx,.ts",
+    "start": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "dev": "vite",
+    "preview": "vite preview",
+    "build:p07": "cd src/p07 && npm install --legacy-peer-deps && npx tsc",
+    "build:p08": "cd src/p08 && npm install --legacy-peer-deps && npx tsc",
+    "build:p09": "cd src/p09 && npm install --legacy-peer-deps && npm run build",
+    "build:p10": "cd src/p10 && npm install --legacy-peer-deps && npm run build",
+    "build:vite": "npm run build:p07 && npm run build:p08 && npm run build:p09 && npm run build:p10 && npm run build",
+    "docs:p07": "cd src/p07 && npm run docs",
+    "docs:p08": "cd src/p08 && npm run docs",
+    "docs:p09": "cd src/p09 && npm run docs",
+    "docs:p10": "cd src/p10 && npm run docs",
+    "docs:all": "npm run docs:p07 && npm run docs:p08 && npm run docs:p09 && npm run docs:p10",
+    "build": "vite build",
+    "build:all": "npm run build:vite && npm run docs:all"
+
+  },
+  "keywords": [
+    "PAI"
+  ],
+  "author": "F. de Sande <fsande@ull.es>",
+  "license": "MIT",
+  "devDependencies": {
+    "@exercism/babel-preset-typescript": "^0.1.0",
+    "@exercism/eslint-config-typescript": "^0.4.1",
+    "@types/jest": "^30.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "babel-jest": "^29.7.0",
+    "core-js": "^3.21.0",
+    "eslint": "^8.33.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.6",
+    "tsc-watch": "^6.0.0",
+    "typedoc": "^0.28.17",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "vite": "^8.0.8"
+  }
+}
