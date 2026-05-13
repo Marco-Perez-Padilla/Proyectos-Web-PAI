@@ -1,0 +1,58 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Programación de Aplicaciones Interactivas
+ *
+ * @author Marco Pérez Padilla
+ * @since Mar 29 2026
+ * @desc Styles for the Function Plotter canvas application.
+ */
+
+.canvas-background {
+  background-color: whitesmoke;
+}
+
+
+.axis-style {
+  --axis-color: dimgray;      
+  --grid-color: gainsboro;   
+  --tick-font: 10px monospace;
+  --tick-length: 4px;        
+}
+
+
+.curve-style {
+  --curve-color: royalblue;       
+  --curve-width: 2;         
+}
+
+
+.label-style {
+  --label-font: bold 14px monospace; 
+  --label-color: midnightblue;               
+  --label-bg: white;                  
+  --label-padding: 10;             
+}
+
+
+.preset-button {
+  border: 1px solid gray;
+  background-color: lightgray;
+}
+
+.preset-button.active {
+  background-color: silver;
+  border-color: gray;
+}
+
+#function-input {
+  margin: 10px;
+  padding: 5px;
+  width: 250px;
+}
+
+#plot-button {
+  padding: 5px 10px;
+  cursor: pointer;
+}

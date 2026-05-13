@@ -1,0 +1,42 @@
+<!--
+  Universidad de La Laguna
+  Escuela Superior de Ingeniería y Tecnología
+  Grado en Ingeniería Informática
+  Programación de Aplicaciones Interactivas
+
+  @author Marco Pérez Padilla
+  @since Mar 29 2026
+  @desc  Function plotter page
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marco Pérez Padilla — Function Plotter</title>
+  <link rel="stylesheet" href="exercise-function-plotter.css">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "mathjs": "https://esm.sh/mathjs@13"
+    }
+  }
+  </script>
+  <script type="module" src="/dist/exercises/evaluation-session/two-functions/exercise-function-plotter.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="author">Marco Pérez Padilla</p>
+  </header>
+
+  <h1>Práctica 9: Programación Gráfica en TypeScript</h1>
+  <p>Graficación del seno por aproximación de Taylor.</p>
+
+  <div>
+    <input type="text" id="taylor-input" placeholder="Ej: Introduce el grado para aproximar Pi" />
+    <button id="taylor-button">Plot</button>
+  </div>
+  <canvas id="function-canvas" class="canvas-background axis-style curve-style label-style" width="800" height="480"></canvas>
+  <div style="text-align: center;">
+    <a href="/public/index.html" class="btn">Volver</a>
+  </div>
+</body>

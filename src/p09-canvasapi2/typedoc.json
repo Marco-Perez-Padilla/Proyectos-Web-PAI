@@ -1,0 +1,25 @@
+{
+  "entryPoints": [
+    "src/exercises/home-work/axisRenderer.ts",
+    "src/exercises/home-work/canvasView.ts",
+    "src/exercises/home-work/coordinateSystem.ts",
+    "src/exercises/home-work/drawable.ts",
+    "src/exercises/home-work/functionPlotter.ts",
+    "src/exercises/home-work/functionRenderer.ts",
+    "src/exercises/home-work/implementedFunctions.ts",
+    "src/exercises/home-work/mathFunction.ts",
+    "src/exercises/home-work/userDefinedFunction.ts",
+    "src/exercises/home-work/exercise-function-plotter.ts"
+  ],
+  "out": "src/exercises/home-work/doc",
+  "exclude": ["node_modules/**", "**/uml/**", "**/doc/**", "**/*.css", "**/*.html"],
+  "name": "Práctica 9 - Canvas API: Function Plotter",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "theme": "default",
+  "categorizeByGroup": true,
+  "categoryOrder": ["Clases", "Interfaces", "Utilidades", "*"],
+  "gitRevision": "main"
+}
