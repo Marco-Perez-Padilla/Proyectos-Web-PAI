@@ -1,0 +1,24 @@
+{
+  "entryPoints": [
+    "src/home-work/common/data-fetcher.ts",
+    "src/home-work/common/interfaces.ts",
+    "src/home-work/common/bar-chart.ts",
+    "src/home-work/common/bar-chart-builder.ts",
+    "src/home-work/tf-sports/sports-adapter.ts",
+    "src/home-work/tf-sports/tf-sports-client.ts",
+    "src/home-work/life-expectancy-barchart/life-expectancy-interfaces.ts",
+    "src/home-work/life-expectancy-barchart/life-expectancy-adapter.ts",
+    "src/home-work/life-expectancy-barchart/life-expectancy-client.ts"
+  ],
+  "out": "docs",
+  "exclude": ["node_modules/**"],
+  "name": "Práctica 8 - JSON Data Visualization",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "theme": "default",
+  "categorizeByGroup": true,
+  "categoryOrder": ["Clases", "Vista", "Utilidades", "*"],
+  "gitRevision": "main"
+}
