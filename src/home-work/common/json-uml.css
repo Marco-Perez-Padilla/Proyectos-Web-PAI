@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid darkgray;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: darkslategray;
+}
+
+.diagram-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.diagram-container img {
+  max-width: 100%;
+  border: 1px solid lightgray;
+  background-color: whitesmoke;
+}
+
+.home-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: steelblue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.home-link:hover {
+  background-color: dodgerblue;
+}
