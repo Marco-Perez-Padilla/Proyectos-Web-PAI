@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphic Object MVC</title>
+
+  <link rel="stylesheet" href="graphic-object.css">
+  <script type="module" src="/dist/exercises/evaluation-exercise1-title/graphic-object.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <span class="author">Marco Pérez Padilla</span>
+  </header>
+
+  <main>
+    <section id="canvas-section">
+      <canvas id="graphic-canvas" class="game-canvas"></canvas>
+    </section>
+
+    <div class="controls">
+      <button class="control-button" id="button-up">Up</button>
+      <div class="row">
+        <button class="control-button" id="button-left">Left</button>
+        <button class="control-button" id="button-right">Right</button>
+      </div>
+      <button class="control-button" id="button-down">Down</button>
+    </div>
+
+    <label for="speed-input">Speed</label>
+    <input id="speed-input" type="number" value="10" min="1" max="500" class="speed-input">
+
+  <footer>
+    <span>
+      Programación de Aplicaciones Interactivas — ULL
+    </span>
+  </footer>
+
+</body>
+</html>

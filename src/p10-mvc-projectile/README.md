@@ -1,0 +1,53 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/3Ro_9NPx)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=23516380&assignment_repo_type=AssignmentRepo)
+
+# Práctica 10 — Animaciones gráficas: Tiro Parabólico
+
+**Marco Pérez Padilla** · Programación de Aplicaciones Interactivas · ULL
+
+---
+
+## Descripción
+
+Aplicación web de página única (SPA) que simula el lanzamiento de un proyectil en tiro parabólico. Implementada con TypeScript puro sobre la Canvas API, siguiendo la arquitectura Modelo-Vista-Controlador (MVC).
+
+El programa permite:
+
+- Introducir altura inicial, velocidad inicial y ángulo de lanzamiento.
+- Visualizar la trayectoria animada del proyectil en tiempo real.
+- Superponer múltiples lanzamientos con colores distintos, sin eliminar los anteriores.
+- Escalar automáticamente los ejes para que el primer lanzamiento siempre quede visible.
+- Mostrar u ocultar la trayectoria mediante un checkbox.
+- Consultar al finalizar cada lanzamiento: tiempo de vuelo, alcance horizontal y altura máxima.
+
+---
+
+## Patrones de diseño aplicados
+
+| Patrón | Clase | Responsabilidad |
+|--------|-------|-----------------|
+| MVC | `ProjectileModel`, `ProjectileView`, `ProjectileController` | Separación de lógica, renderizado y control de entrada. |
+| Facade | `ProjectileView` | Orquesta los tres sub-renderers sin exponer su implementación. |
+| Single Responsibility | `AxisRenderer`, `ProjectileRenderer`, `InfoRenderer` | Cada clase dibuja una única categoría de elementos. |
+
+---
+
+## Uso
+
+```bash
+npm install
+npm run build
+npm run run
+```
+
+## Generar documentación TypeDoc
+
+```bash
+npm run docs
+```
+
+---
+
+## Autor
+
+Marco Pérez Padilla — alu0101469348@ull.edu.es

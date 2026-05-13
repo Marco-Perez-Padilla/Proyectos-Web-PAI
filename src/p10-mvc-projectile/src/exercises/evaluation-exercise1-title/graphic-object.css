@@ -1,0 +1,38 @@
+#canvas-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .game-canvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid steelblue;
+  }
+  
+  .controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  
+    background: gray;
+    padding: 16px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .control-button {
+    padding: 8px 14px;
+    font-family: sans-serif;
+    cursor: pointer;
+  }

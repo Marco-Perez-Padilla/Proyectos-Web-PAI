@@ -1,0 +1,31 @@
+.
+├── basura
+├── LICENSE
+├── p10_ProjectileAnimation.md
+├── package.json
+├── public
+│   ├── index.html
+│   └── styles.css
+├── README.md
+├── scripts
+│   └── dev-server.js
+├── src
+│   └── exercises
+│       ├── bouncing-ball-animation-example
+│       │   ├── animation.html
+│       │   ├── Ball.ts
+│       │   ├── dist
+│       │   ├── main.ts
+│       │   ├── package.json
+│       │   ├── package-lock.json
+│       │   ├── README.md
+│       │   ├── styles.css
+│       │   ├── tsconfig.json
+│       │   └── ViewAnimation.ts
+│       ├── evaluation-exercise1-title
+│       └── home-work
+│           ├── doc
+│           └── uml
+└── tsconfig.json
+
+11 directories, 18 files

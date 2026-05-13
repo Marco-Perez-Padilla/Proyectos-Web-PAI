@@ -1,0 +1,63 @@
+<!--
+  Universidad de La Laguna
+  Escuela Superior de Ingeniería y Tecnología
+  Grado en Ingeniería Informática
+  Programación de Aplicaciones Interactivas
+
+  @author Marco Pérez Padilla
+  @since Apr 11 2026
+  @desc Projectile animation single-page application
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marco Pérez Padilla — Práctica 10. Tiro Parabólico</title>
+  <link rel="stylesheet" href="projectile.css">
+  <script type="module" src="/dist/exercises/home-work/projectile.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <span class="author">Marco Pérez Padilla</span>
+  </header>
+
+  <main>
+
+    <section id="p1">
+      <canvas id="canvas-p1"></canvas>
+    </section>
+
+    <section id="p2">
+      <canvas id="canvas-p2"></canvas>
+    </section>
+
+    <section id="p3">
+      <label class="param-label">
+        Altura inicial (m):
+        <input type="number" id="height-input" class="param-input" value="0" min="0" step="1">
+      </label>
+      <label class="param-label">
+        Velocidad inicial (m/s):
+        <input type="number" id="velocity-input" class="param-input" value="50" min="1" step="1">
+      </label>
+      <label class="param-label">
+        Ángulo (°):
+        <input type="number" id="angle-input" class="param-input" value="45" min="1" max="89" step="1">
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="trajectory-checkbox" checked>
+        Mostrar trayectoria
+      </label>
+      <button id="animate-button" class="launch-btn">Lanzar</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>Programación de Aplicaciones Interactivas &mdash; Grado en Ingeniería Informática &mdash; ULL</span>
+  </footer>
+
+</body>
+</html>
