@@ -14,9 +14,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marco Pérez Padilla - Poker</title>
+  <title>Marco Pérez Padilla - Poker 2</title>
   <link rel="stylesheet" href="/25-26-pai-p13-balatro-Marco-Perez-Padilla/ull-bulma.css">
-  <script type="module" crossorigin src="/25-26-pai-p13-balatro-Marco-Perez-Padilla/assets/poker2-DA-z7qza.js"></script>
+  <script type="module" crossorigin src="/25-26-pai-p13-balatro-Marco-Perez-Padilla/assets/poker2-BPZdZa8r.js"></script>
   <link rel="modulepreload" crossorigin href="/25-26-pai-p13-balatro-Marco-Perez-Padilla/assets/modulepreload-polyfill-BxR_cmXS.js">
 </head>
 <body>
@@ -24,7 +24,7 @@
   <section class="hero is-primary">
     <div class="hero-body" style="padding: 0.75rem 1.5rem;">
       <div class="container">
-        <h1 class="title has-text-white">PAI Práctica 13 - Poker</h1>
+        <h1 class="title has-text-white">PAI Práctica 13 - Poker 2</h1>
         <h2 class="subtitle has-text-white-ter">Marco Pérez Padilla — Grado en Ingeniería Informática · ULL</h2>
       </div>
     </div>
@@ -32,31 +32,26 @@
 
   <section class="section">
     <div class="container">
-
-      <!-- Block 1: Points -->
+      <!-- Block 1: Hands -->
       <div class="box">
-        <div class="columns is-mobile">
-          <div class="column">
-            <p class="heading">Points</p>
-            <p id="pointsDisplay" class="title is-5 has-text-white">0</p>
-          </div>
-        </div>
+        <canvas id="hand1Canvas" width="900" height="180"></canvas>
+        <canvas id="hand2Canvas" width="900" height="180"></canvas>
       </div>
-      <!-- Block 2: Current Hand -->
+      <!-- Block 2:Results Preview -->
       <div class="box">
-        <canvas id="handCanvas" width="900" height="180"></canvas>
+        <p class="heading">Results</p>
+        <p id="hand1Game" class="subtitle is-6 has-text-light">-</p>
+        <p id="hand2Game" class="subtitle is-6 has-text-light">-</p>
+        <p id="winner" class="subtitle is-6 has-text-light">-</p>
       </div>
-
       <!-- Block 3: Game control -->
       <div class="box">
         <div class="buttons">
-          <button id="playGreaterButton" class="button is-primary">Mayor</button>
-          <button id="playLessThanButton" class="button is-warning">Menor</button>
-          <button id="newGamebutton" class="button is-info">Nuevo Juego</button>
+          <button id="newHand1" class="button is-primary">New Hand 1</button>
+          <button id="newHand2" class="button is-warning">New Hand 2</button>
         </div>
         <p id="statusMessage" class="has-text-centered"></p>
       </div>
-
     </div>
   </section>
 </body>

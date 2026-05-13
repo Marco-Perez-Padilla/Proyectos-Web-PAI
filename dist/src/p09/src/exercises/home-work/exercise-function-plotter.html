@@ -1,0 +1,44 @@
+<!--
+  Universidad de La Laguna
+  Escuela Superior de Ingeniería y Tecnología
+  Grado en Ingeniería Informática
+  Programación de Aplicaciones Interactivas
+
+  @author Marco Pérez Padilla
+  @since Mar 29 2026
+  @desc  Function plotter page
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marco Pérez Padilla — Function Plotter</title>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "mathjs": "https://esm.sh/mathjs@13"
+    }
+  }
+  </script>
+  <script type="module" crossorigin src="/Proyectos-Web-PAI/dist/assets/p09Functions-Bht1KjOm.js"></script>
+  <link rel="modulepreload" crossorigin href="/Proyectos-Web-PAI/dist/assets/modulepreload-polyfill-CyXKLSat.js">
+  <link rel="stylesheet" crossorigin href="/Proyectos-Web-PAI/dist/assets/p09Functions-BRa65lYQ.css">
+  <link rel="stylesheet" crossorigin href="/Proyectos-Web-PAI/dist/assets/styles-peFTCqC8.css">
+</head>
+<body>
+  <header>
+    <p class="author">Marco Pérez Padilla</p>
+  </header>
+
+  <h1>Práctica 9: Programación Gráfica en TypeScript</h1>
+  <p>Graficación de funciones matemáticas usando Canvas y TypeScript.</p>
+
+  <div>
+    <input type="text" id="function-input" placeholder="Ej: sin(x), x^2 + 3*x" />
+    <button id="plot-button">Plot</button>
+  </div>
+  <canvas id="function-canvas" class="canvas-background axis-style curve-style label-style" width="800" height="480"></canvas>
+  <div style="text-align: center;">
+    <a href="../../../public/index.html" class="btn">Volver</a>
+  </div>
+</body>

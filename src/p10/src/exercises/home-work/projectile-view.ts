@@ -11,7 +11,7 @@
 
 import { CoordinateMapper } from './coordinate-mapper.js';
 import { AxisRenderer, AxisStyle } from './axis-renderer.js';
-import { ProjectileRenderer, ProjectileStyle, StoredTrajectory } from './projectile-renderer.js';
+import { ProjectileRenderer, ProjectileStyle, type StoredTrajectory } from './projectile-renderer.js';
 import { InfoRenderer, InfoStyle } from './info-renderer.js';
 
 export { StoredTrajectory };

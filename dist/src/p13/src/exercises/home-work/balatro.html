@@ -1,0 +1,96 @@
+<!--  
+   Universidad de La Laguna
+	 Escuela Superior de Ingeniería y Tecnología
+	 Grado en Ingeniería Informática
+	 Programación de Aplicaciones Interactivas
+
+   @author Marco Pérez Padilla
+   @since April 30, 2026
+	 @description Html para el juego Balatro, con arquitectura Modelo-Vista-Controlador.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marco Pérez Padilla - Balatro</title>
+  <script type="module" crossorigin src="/Proyectos-Web-PAI/dist/assets/p13Balatro-BD2xy5Dq.js"></script>
+  <link rel="modulepreload" crossorigin href="/Proyectos-Web-PAI/dist/assets/modulepreload-polyfill-CyXKLSat.js">
+  <link rel="stylesheet" crossorigin href="/Proyectos-Web-PAI/dist/assets/ull-bulma-DaFEzXAc.css">
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+
+      <!-- Block 1: Level, Money, Round, Deck -->
+      <div class="box">
+        <div class="columns is-mobile">
+          <div class="column">
+            <p class="heading">Small Blind</p>
+            <p class="title is-5 has-text-white">Level 1</p>
+          </div>
+          <div class="column">
+            <p class="heading">Money</p>
+            <p class="title is-5 has-text-white">$0</p>
+          </div>
+          <div class="column">
+            <p class="heading">Round</p>
+            <p class="title is-5 has-text-white">1</p>
+          </div>
+          <div class="column">
+            <p class="heading">Deck</p>
+            <p id="deckCountDisplay" class="title is-5 has-text-white">52 cards</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Block 2: Jokers (empty but framed) -->
+      <div class="box">
+        <p class="heading">Jokers</p>
+        <div class="content"></div>
+      </div>
+
+      <!-- Block 3: Target and current score -->
+      <div class="box">
+        <div class="columns is-mobile">
+          <div class="column">
+            <p id="targetScoreDisplay" class="heading">Goal: 300</p>
+          </div>
+          <div class="column">
+            <p id="currentScoreDisplay" class="heading">Score: 0</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Block 4: Current Hand -->
+      <div class="box">
+        <p class="heading">Current Hand (<span id="selectedCountDisplay">0</span> selected)</p>
+        <p id="selectedMaxDisplay" class="is-size-7 mb-2">Selected: 0/5</p>
+        <canvas id="handCanvas" width="900" height="180"></canvas>
+      </div>
+
+      <!-- Block 5: Score Preview -->
+      <div class="box">
+        <p class="heading">Score Preview</p>
+        <p id="handNameDisplay" class="title is-6 has-text-light">-</p>
+        <p id="handScoreDisplay" class="subtitle is-6 has-text-light">-</p>
+      </div>
+
+      <!-- Block 6: Game control -->
+      <div class="box">
+        <div class="buttons">
+          <button id="playHandButton" class="button is-primary">Play Hand</button>
+          <button id="discardButton" class="button is-warning">Discard</button>
+          <span id="handsCountDisplay" class="tag is-medium is-light has-text-primary">Hands: 3/3</span>
+          <span id="discardsCountDisplay" class="tag is-medium is-light has-text-primary">Discards: 3/3</span>
+          <button id="handInfoButton" class="button is-info">Hand Info</button>
+          <button id="sortButton" class="button is-link">Sort: Rank</button>
+        </div>
+        <p id="statusMessage" class="has-text-centered"></p>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>

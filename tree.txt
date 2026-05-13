@@ -1,0 +1,1309 @@
+.
+├── dist
+│   └── src
+│       ├── p07
+│       │   └── docs
+│       │       ├── assets
+│       │       │   ├── hierarchy.js
+│       │       │   ├── highlight.css
+│       │       │   ├── icons.js
+│       │       │   ├── icons.svg
+│       │       │   ├── main.js
+│       │       │   ├── navigation.js
+│       │       │   ├── search.js
+│       │       │   └── style.css
+│       │       ├── classes
+│       │       │   ├── shapes.Circle.html
+│       │       │   ├── shapes.Polygon.html
+│       │       │   ├── shapes.Rectangle.html
+│       │       │   ├── shapes.Shape.html
+│       │       │   ├── shapes.Square.html
+│       │       │   ├── shapes.Triangle.html
+│       │       │   └── view.View.html
+│       │       ├── hierarchy.html
+│       │       ├── index.html
+│       │       ├── modules
+│       │       │   ├── main.html
+│       │       │   ├── shapes.html
+│       │       │   └── view.html
+│       │       └── modules.html
+│       ├── p08
+│       │   └── docs
+│       │       ├── assets
+│       │       │   ├── hierarchy.js
+│       │       │   ├── highlight.css
+│       │       │   ├── icons.js
+│       │       │   ├── icons.svg
+│       │       │   ├── main.js
+│       │       │   ├── navigation.js
+│       │       │   ├── search.js
+│       │       │   └── style.css
+│       │       ├── classes
+│       │       │   ├── common_bar-chart.BarChart.html
+│       │       │   ├── common_bar-chart-builder.BarChartBuilder.html
+│       │       │   ├── common_data-fetcher.DataFetcher.html
+│       │       │   ├── life-expectancy-barchart_life-expectancy-adapter.WHOAdapter.html
+│       │       │   └── tf-sports_sports-adapter.SportsDataAdapter.html
+│       │       ├── hierarchy.html
+│       │       ├── index.html
+│       │       ├── interfaces
+│       │       │   ├── common_interfaces.BarChartConfig.html
+│       │       │   ├── common_interfaces.ChartData.html
+│       │       │   ├── common_interfaces.Margin.html
+│       │       │   ├── life-expectancy-barchart_life-expectancy-interfaces.WorldBankMeta.html
+│       │       │   └── life-expectancy-barchart_life-expectancy-interfaces.WorldBankRecord.html
+│       │       ├── modules
+│       │       │   ├── common_bar-chart-builder.html
+│       │       │   ├── common_bar-chart.html
+│       │       │   ├── common_data-fetcher.html
+│       │       │   ├── common_interfaces.html
+│       │       │   ├── life-expectancy-barchart_life-expectancy-adapter.html
+│       │       │   ├── life-expectancy-barchart_life-expectancy-client.html
+│       │       │   ├── life-expectancy-barchart_life-expectancy-interfaces.html
+│       │       │   ├── tf-sports_sports-adapter.html
+│       │       │   └── tf-sports_tf-sports-client.html
+│       │       ├── modules.html
+│       │       └── types
+│       │           └── life-expectancy-barchart_life-expectancy-interfaces.WorldBankResponse.html
+│       └── p09
+│           └── src
+│               └── exercises
+│                   └── home-work
+│                       └── docs
+│                           ├── assets
+│                           │   ├── highlight.css
+│                           │   ├── main.js
+│                           │   ├── search.js
+│                           │   └── style.css
+│                           ├── classes
+│                           │   ├── axisRenderer.AxisRenderer.html
+│                           │   ├── canvasView.CanvasView.html
+│                           │   ├── coordinateSystem.CoordinateSystem.html
+│                           │   ├── functionPlotter.FunctionPlotter.html
+│                           │   ├── functionRenderer.FunctionRenderer.html
+│                           │   ├── implementedFunctions.CosineFunction.html
+│                           │   ├── implementedFunctions.ExponentialFunction.html
+│                           │   ├── implementedFunctions.NaturalLogFunction.html
+│                           │   ├── implementedFunctions.QuadraticFunction.html
+│                           │   ├── implementedFunctions.SineFunction.html
+│                           │   ├── implementedFunctions.SquareRootFunction.html
+│                           │   └── userDefinedFunction.UserDefinedFunction.html
+│                           ├── index.html
+│                           ├── interfaces
+│                           │   ├── axisRenderer.AxisStyle.html
+│                           │   ├── drawable.Drawable.html
+│                           │   ├── functionPlotter.PlotStyle.html
+│                           │   ├── functionRenderer.RendererStyle.html
+│                           │   └── mathFunction.MathFunction.html
+│                           ├── modules
+│                           │   ├── axisRenderer.html
+│                           │   ├── canvasView.html
+│                           │   ├── coordinateSystem.html
+│                           │   ├── drawable.html
+│                           │   ├── exercise_function_plotter.html
+│                           │   ├── functionPlotter.html
+│                           │   ├── functionRenderer.html
+│                           │   ├── implementedFunctions.html
+│                           │   ├── mathFunction.html
+│                           │   └── userDefinedFunction.html
+│                           └── modules.html
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+├── src
+│   ├── p07
+│   │   ├── dist
+│   │   │   └── home-work
+│   │   │       ├── src
+│   │   │       │   ├── main.d.ts
+│   │   │       │   ├── main.js
+│   │   │       │   ├── shapes.d.ts
+│   │   │       │   ├── shapes.js
+│   │   │       │   ├── view.d.ts
+│   │   │       │   └── view.js
+│   │   │       └── tests
+│   │   │           ├── shapes.test.d.ts
+│   │   │           └── shapes.test.js
+│   │   ├── docs
+│   │   │   ├── assets
+│   │   │   │   ├── hierarchy.js
+│   │   │   │   ├── highlight.css
+│   │   │   │   ├── icons.js
+│   │   │   │   ├── icons.svg
+│   │   │   │   ├── main.js
+│   │   │   │   ├── navigation.js
+│   │   │   │   ├── search.js
+│   │   │   │   └── style.css
+│   │   │   ├── classes
+│   │   │   │   ├── shapes.Circle.html
+│   │   │   │   ├── shapes.Polygon.html
+│   │   │   │   ├── shapes.Rectangle.html
+│   │   │   │   ├── shapes.Shape.html
+│   │   │   │   ├── shapes.Square.html
+│   │   │   │   ├── shapes.Triangle.html
+│   │   │   │   └── view.View.html
+│   │   │   ├── hierarchy.html
+│   │   │   ├── index.html
+│   │   │   ├── modules
+│   │   │   │   ├── main.html
+│   │   │   │   ├── shapes.html
+│   │   │   │   └── view.html
+│   │   │   └── modules.html
+│   │   ├── eslint.config.js
+│   │   ├── game-server-log
+│   │   ├── index.html
+│   │   ├── jest.config.js
+│   │   ├── LICENSE
+│   │   ├── marco-perez-padilla-figures.html
+│   │   ├── p07_CanvasAPI.md
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   └── home-work
+│   │   │       ├── README.md
+│   │   │       ├── src
+│   │   │       │   ├── main.ts
+│   │   │       │   ├── shapes.ts
+│   │   │       │   └── view.ts
+│   │   │       └── tests
+│   │   │           └── shapes.test.ts
+│   │   ├── tsconfig.json
+│   │   └── typedoc.json
+│   ├── p08
+│   │   ├── dist
+│   │   │   └── home-work
+│   │   │       ├── common
+│   │   │       │   ├── bar-chart-builder.js
+│   │   │       │   ├── bar-chart.js
+│   │   │       │   ├── data-fetcher.js
+│   │   │       │   └── interfaces.js
+│   │   │       ├── life-expectancy-barchart
+│   │   │       │   ├── life-expectancy-adapter.js
+│   │   │       │   ├── life-expectancy-client.js
+│   │   │       │   └── life-expectancy-interfaces.js
+│   │   │       ├── tests
+│   │   │       │   ├── life-expectancy-adapter.test.js
+│   │   │       │   └── sports-adapter.test.js
+│   │   │       └── tf-sports
+│   │   │           ├── sports-adapter.js
+│   │   │           ├── tf-sports-client.js
+│   │   │           └── tf-sports-interfaces.js
+│   │   ├── docs
+│   │   │   ├── assets
+│   │   │   │   ├── hierarchy.js
+│   │   │   │   ├── highlight.css
+│   │   │   │   ├── icons.js
+│   │   │   │   ├── icons.svg
+│   │   │   │   ├── main.js
+│   │   │   │   ├── navigation.js
+│   │   │   │   ├── search.js
+│   │   │   │   └── style.css
+│   │   │   ├── classes
+│   │   │   │   ├── common_bar-chart.BarChart.html
+│   │   │   │   ├── common_bar-chart-builder.BarChartBuilder.html
+│   │   │   │   ├── common_data-fetcher.DataFetcher.html
+│   │   │   │   ├── life-expectancy-barchart_life-expectancy-adapter.WHOAdapter.html
+│   │   │   │   └── tf-sports_sports-adapter.SportsDataAdapter.html
+│   │   │   ├── hierarchy.html
+│   │   │   ├── index.html
+│   │   │   ├── interfaces
+│   │   │   │   ├── common_interfaces.BarChartConfig.html
+│   │   │   │   ├── common_interfaces.ChartData.html
+│   │   │   │   ├── common_interfaces.Margin.html
+│   │   │   │   ├── life-expectancy-barchart_life-expectancy-interfaces.WorldBankMeta.html
+│   │   │   │   └── life-expectancy-barchart_life-expectancy-interfaces.WorldBankRecord.html
+│   │   │   ├── modules
+│   │   │   │   ├── common_bar-chart-builder.html
+│   │   │   │   ├── common_bar-chart.html
+│   │   │   │   ├── common_data-fetcher.html
+│   │   │   │   ├── common_interfaces.html
+│   │   │   │   ├── life-expectancy-barchart_life-expectancy-adapter.html
+│   │   │   │   ├── life-expectancy-barchart_life-expectancy-client.html
+│   │   │   │   ├── life-expectancy-barchart_life-expectancy-interfaces.html
+│   │   │   │   ├── tf-sports_sports-adapter.html
+│   │   │   │   └── tf-sports_tf-sports-client.html
+│   │   │   ├── modules.html
+│   │   │   └── types
+│   │   │       └── life-expectancy-barchart_life-expectancy-interfaces.WorldBankResponse.html
+│   │   ├── eslint.config.js
+│   │   ├── index.css
+│   │   ├── index.html
+│   │   ├── jest.config.js
+│   │   ├── LICENSE
+│   │   ├── p08_JSON-Data-visualization.md
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── read-JSON-app
+│   │   │   ├── package.json
+│   │   │   ├── package-lock.json
+│   │   │   ├── README.md
+│   │   │   ├── tsconfig.json
+│   │   │   ├── web-server
+│   │   │   │   └── app.js
+│   │   │   └── www
+│   │   │       ├── index.html
+│   │   │       ├── read-json.js
+│   │   │       └── read-json.ts
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   └── home-work
+│   │   │       ├── common
+│   │   │       │   ├── bar-chart-builder.ts
+│   │   │       │   ├── bar-chart.css
+│   │   │       │   ├── bar-chart.ts
+│   │   │       │   ├── data-fetcher.ts
+│   │   │       │   ├── interfaces.ts
+│   │   │       │   ├── json-uml.css
+│   │   │       │   ├── json-uml.html
+│   │   │       │   └── JSON-UML.svg
+│   │   │       ├── life-expectancy-barchart
+│   │   │       │   ├── life-expectancy-adapter.ts
+│   │   │       │   ├── life-expectancy-client.ts
+│   │   │       │   ├── life-expectancy-interfaces.ts
+│   │   │       │   └── marco-perez-padilla-life-expectancy-bar-chart.html
+│   │   │       ├── README.md
+│   │   │       ├── tests
+│   │   │       │   ├── life-expectancy-adapter.test.ts
+│   │   │       │   └── sports-adapter.test.ts
+│   │   │       └── tf-sports
+│   │   │           ├── marco-perez-padilla-tf-sports-bar-chart.html
+│   │   │           ├── sports-adapter.ts
+│   │   │           ├── tf-sports-client.ts
+│   │   │           └── tf-sports-interfaces.ts
+│   │   ├── tsconfig.json
+│   │   └── typedoc.json
+│   ├── p09
+│   │   ├── dist
+│   │   │   └── exercises
+│   │   │       ├── evaluation-session
+│   │   │       │   ├── character
+│   │   │       │   │   ├── character-good.js
+│   │   │       │   │   └── character-main.js
+│   │   │       │   ├── taylor-series
+│   │   │       │   │   ├── axisRenderer.js
+│   │   │       │   │   ├── canvasView.js
+│   │   │       │   │   ├── coordinateSystem.js
+│   │   │       │   │   ├── doc
+│   │   │       │   │   │   └── assets
+│   │   │       │   │   │       ├── main.js
+│   │   │       │   │   │       └── search.js
+│   │   │       │   │   ├── drawable.js
+│   │   │       │   │   ├── exercise-function-plotter.js
+│   │   │       │   │   ├── functionPlotter.js
+│   │   │       │   │   ├── functionRenderer.js
+│   │   │       │   │   ├── implementedFunctions.js
+│   │   │       │   │   ├── mathFunction.js
+│   │   │       │   │   └── userDefinedFunction.js
+│   │   │       │   └── two-functions
+│   │   │       │       ├── axisRenderer.js
+│   │   │       │       ├── canvasView.js
+│   │   │       │       ├── coordinateSystem.js
+│   │   │       │       ├── doc
+│   │   │       │       │   └── assets
+│   │   │       │       │       ├── main.js
+│   │   │       │       │       └── search.js
+│   │   │       │       ├── drawable.js
+│   │   │       │       ├── exercise-function-plotter.js
+│   │   │       │       ├── functionPlotter.js
+│   │   │       │       ├── functionRenderer.js
+│   │   │       │       ├── implementedFunctions.js
+│   │   │       │       ├── mathFunction.js
+│   │   │       │       └── userDefinedFunction.js
+│   │   │       └── home-work
+│   │   │           ├── axisRenderer.js
+│   │   │           ├── canvasView.js
+│   │   │           ├── coordinateSystem.js
+│   │   │           ├── doc
+│   │   │           │   └── assets
+│   │   │           │       ├── main.js
+│   │   │           │       └── search.js
+│   │   │           ├── drawable.js
+│   │   │           ├── exercise-function-plotter.js
+│   │   │           ├── functionPlotter.js
+│   │   │           ├── functionRenderer.js
+│   │   │           ├── implementedFunctions.js
+│   │   │           ├── mathFunction.js
+│   │   │           └── userDefinedFunction.js
+│   │   ├── LICENSE
+│   │   ├── p09_Canvas-FunctionRendering.md
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── public
+│   │   │   ├── index.html
+│   │   │   └── styles.css
+│   │   ├── README.md
+│   │   ├── scripts
+│   │   │   └── dev-server.js
+│   │   ├── src
+│   │   │   └── exercises
+│   │   │       ├── evaluation-session
+│   │   │       │   ├── character
+│   │   │       │   │   ├── character-good.ts
+│   │   │       │   │   └── character-main.ts
+│   │   │       │   ├── taylor-series
+│   │   │       │   │   ├── axisRenderer.ts
+│   │   │       │   │   ├── canvasView.ts
+│   │   │       │   │   ├── coordinateSystem.ts
+│   │   │       │   │   ├── doc
+│   │   │       │   │   │   ├── assets
+│   │   │       │   │   │   │   ├── highlight.css
+│   │   │       │   │   │   │   ├── main.js
+│   │   │       │   │   │   │   ├── search.js
+│   │   │       │   │   │   │   └── style.css
+│   │   │       │   │   │   ├── classes
+│   │   │       │   │   │   │   ├── axisRenderer.AxisRenderer.html
+│   │   │       │   │   │   │   ├── canvasView.CanvasView.html
+│   │   │       │   │   │   │   ├── coordinateSystem.CoordinateSystem.html
+│   │   │       │   │   │   │   ├── functionPlotter.FunctionPlotter.html
+│   │   │       │   │   │   │   ├── functionRenderer.FunctionRenderer.html
+│   │   │       │   │   │   │   ├── implementedFunctions.CosineFunction.html
+│   │   │       │   │   │   │   ├── implementedFunctions.ExponentialFunction.html
+│   │   │       │   │   │   │   ├── implementedFunctions.NaturalLogFunction.html
+│   │   │       │   │   │   │   ├── implementedFunctions.QuadraticFunction.html
+│   │   │       │   │   │   │   ├── implementedFunctions.SineFunction.html
+│   │   │       │   │   │   │   ├── implementedFunctions.SquareRootFunction.html
+│   │   │       │   │   │   │   └── userDefinedFunction.UserDefinedFunction.html
+│   │   │       │   │   │   ├── index.html
+│   │   │       │   │   │   ├── interfaces
+│   │   │       │   │   │   │   ├── axisRenderer.AxisStyle.html
+│   │   │       │   │   │   │   ├── drawable.Drawable.html
+│   │   │       │   │   │   │   ├── functionPlotter.PlotStyle.html
+│   │   │       │   │   │   │   ├── functionRenderer.RendererStyle.html
+│   │   │       │   │   │   │   └── mathFunction.MathFunction.html
+│   │   │       │   │   │   ├── modules
+│   │   │       │   │   │   │   ├── axisRenderer.html
+│   │   │       │   │   │   │   ├── canvasView.html
+│   │   │       │   │   │   │   ├── coordinateSystem.html
+│   │   │       │   │   │   │   ├── drawable.html
+│   │   │       │   │   │   │   ├── exercise_function_plotter.html
+│   │   │       │   │   │   │   ├── functionPlotter.html
+│   │   │       │   │   │   │   ├── functionRenderer.html
+│   │   │       │   │   │   │   ├── implementedFunctions.html
+│   │   │       │   │   │   │   ├── mathFunction.html
+│   │   │       │   │   │   │   └── userDefinedFunction.html
+│   │   │       │   │   │   └── modules.html
+│   │   │       │   │   ├── drawable.ts
+│   │   │       │   │   ├── exercise-function-plotter.css
+│   │   │       │   │   ├── exercise-function-plotter.html
+│   │   │       │   │   ├── exercise-function-plotter.ts
+│   │   │       │   │   ├── functionPlotter.ts
+│   │   │       │   │   ├── functionRenderer.ts
+│   │   │       │   │   ├── implementedFunctions.ts
+│   │   │       │   │   ├── mathFunction.ts
+│   │   │       │   │   ├── uml
+│   │   │       │   │   │   ├── function-plotter-uml.css
+│   │   │       │   │   │   ├── function-plotter-uml.html
+│   │   │       │   │   │   └── Function-UML.svg
+│   │   │       │   │   └── userDefinedFunction.ts
+│   │   │       │   └── two-functions
+│   │   │       │       ├── axisRenderer.ts
+│   │   │       │       ├── canvasView.ts
+│   │   │       │       ├── coordinateSystem.ts
+│   │   │       │       ├── doc
+│   │   │       │       │   ├── assets
+│   │   │       │       │   │   ├── highlight.css
+│   │   │       │       │   │   ├── main.js
+│   │   │       │       │   │   ├── search.js
+│   │   │       │       │   │   └── style.css
+│   │   │       │       │   ├── classes
+│   │   │       │       │   │   ├── axisRenderer.AxisRenderer.html
+│   │   │       │       │   │   ├── canvasView.CanvasView.html
+│   │   │       │       │   │   ├── coordinateSystem.CoordinateSystem.html
+│   │   │       │       │   │   ├── functionPlotter.FunctionPlotter.html
+│   │   │       │       │   │   ├── functionRenderer.FunctionRenderer.html
+│   │   │       │       │   │   ├── implementedFunctions.CosineFunction.html
+│   │   │       │       │   │   ├── implementedFunctions.ExponentialFunction.html
+│   │   │       │       │   │   ├── implementedFunctions.NaturalLogFunction.html
+│   │   │       │       │   │   ├── implementedFunctions.QuadraticFunction.html
+│   │   │       │       │   │   ├── implementedFunctions.SineFunction.html
+│   │   │       │       │   │   ├── implementedFunctions.SquareRootFunction.html
+│   │   │       │       │   │   └── userDefinedFunction.UserDefinedFunction.html
+│   │   │       │       │   ├── index.html
+│   │   │       │       │   ├── interfaces
+│   │   │       │       │   │   ├── axisRenderer.AxisStyle.html
+│   │   │       │       │   │   ├── drawable.Drawable.html
+│   │   │       │       │   │   ├── functionPlotter.PlotStyle.html
+│   │   │       │       │   │   ├── functionRenderer.RendererStyle.html
+│   │   │       │       │   │   └── mathFunction.MathFunction.html
+│   │   │       │       │   ├── modules
+│   │   │       │       │   │   ├── axisRenderer.html
+│   │   │       │       │   │   ├── canvasView.html
+│   │   │       │       │   │   ├── coordinateSystem.html
+│   │   │       │       │   │   ├── drawable.html
+│   │   │       │       │   │   ├── exercise_function_plotter.html
+│   │   │       │       │   │   ├── functionPlotter.html
+│   │   │       │       │   │   ├── functionRenderer.html
+│   │   │       │       │   │   ├── implementedFunctions.html
+│   │   │       │       │   │   ├── mathFunction.html
+│   │   │       │       │   │   └── userDefinedFunction.html
+│   │   │       │       │   └── modules.html
+│   │   │       │       ├── drawable.ts
+│   │   │       │       ├── exercise-function-plotter.css
+│   │   │       │       ├── exercise-function-plotter.html
+│   │   │       │       ├── exercise-function-plotter.ts
+│   │   │       │       ├── functionPlotter.ts
+│   │   │       │       ├── functionRenderer.ts
+│   │   │       │       ├── implementedFunctions.ts
+│   │   │       │       ├── mathFunction.ts
+│   │   │       │       ├── uml
+│   │   │       │       │   ├── function-plotter-uml.css
+│   │   │       │       │   ├── function-plotter-uml.html
+│   │   │       │       │   └── Function-UML.svg
+│   │   │       │       └── userDefinedFunction.ts
+│   │   │       ├── exercise-1-hello-canvas
+│   │   │       └── home-work
+│   │   │           ├── axisRenderer.ts
+│   │   │           ├── canvasView.ts
+│   │   │           ├── coordinateSystem.ts
+│   │   │           ├── doc
+│   │   │           │   ├── assets
+│   │   │           │   │   ├── highlight.css
+│   │   │           │   │   ├── main.js
+│   │   │           │   │   ├── search.js
+│   │   │           │   │   └── style.css
+│   │   │           │   ├── classes
+│   │   │           │   │   ├── axisRenderer.AxisRenderer.html
+│   │   │           │   │   ├── canvasView.CanvasView.html
+│   │   │           │   │   ├── coordinateSystem.CoordinateSystem.html
+│   │   │           │   │   ├── functionPlotter.FunctionPlotter.html
+│   │   │           │   │   ├── functionRenderer.FunctionRenderer.html
+│   │   │           │   │   ├── implementedFunctions.CosineFunction.html
+│   │   │           │   │   ├── implementedFunctions.ExponentialFunction.html
+│   │   │           │   │   ├── implementedFunctions.NaturalLogFunction.html
+│   │   │           │   │   ├── implementedFunctions.QuadraticFunction.html
+│   │   │           │   │   ├── implementedFunctions.SineFunction.html
+│   │   │           │   │   ├── implementedFunctions.SquareRootFunction.html
+│   │   │           │   │   └── userDefinedFunction.UserDefinedFunction.html
+│   │   │           │   ├── index.html
+│   │   │           │   ├── interfaces
+│   │   │           │   │   ├── axisRenderer.AxisStyle.html
+│   │   │           │   │   ├── drawable.Drawable.html
+│   │   │           │   │   ├── functionPlotter.PlotStyle.html
+│   │   │           │   │   ├── functionRenderer.RendererStyle.html
+│   │   │           │   │   └── mathFunction.MathFunction.html
+│   │   │           │   ├── modules
+│   │   │           │   │   ├── axisRenderer.html
+│   │   │           │   │   ├── canvasView.html
+│   │   │           │   │   ├── coordinateSystem.html
+│   │   │           │   │   ├── drawable.html
+│   │   │           │   │   ├── exercise_function_plotter.html
+│   │   │           │   │   ├── functionPlotter.html
+│   │   │           │   │   ├── functionRenderer.html
+│   │   │           │   │   ├── implementedFunctions.html
+│   │   │           │   │   ├── mathFunction.html
+│   │   │           │   │   └── userDefinedFunction.html
+│   │   │           │   └── modules.html
+│   │   │           ├── drawable.ts
+│   │   │           ├── exercise-function-plotter.css
+│   │   │           ├── exercise-function-plotter.html
+│   │   │           ├── exercise-function-plotter.ts
+│   │   │           ├── functionPlotter.ts
+│   │   │           ├── functionRenderer.ts
+│   │   │           ├── implementedFunctions.ts
+│   │   │           ├── mathFunction.ts
+│   │   │           ├── uml
+│   │   │           │   ├── function-plotter-uml.css
+│   │   │           │   ├── function-plotter-uml.html
+│   │   │           │   └── Function-UML.svg
+│   │   │           └── userDefinedFunction.ts
+│   │   ├── tsconfig.json
+│   │   └── typedoc.json
+│   ├── p10
+│   │   ├── basura
+│   │   ├── dist
+│   │   │   └── exercises
+│   │   │       ├── bouncing-ball-animation-example
+│   │   │       │   ├── Ball.js
+│   │   │       │   ├── main.js
+│   │   │       │   └── ViewAnimation.js
+│   │   │       ├── evaluation-exercise1-title
+│   │   │       │   ├── graphic-object-controller.js
+│   │   │       │   ├── graphic-object.js
+│   │   │       │   ├── graphic-object-model.js
+│   │   │       │   └── graphic-object-view.js
+│   │   │       └── home-work
+│   │   │           ├── axis-renderer.js
+│   │   │           ├── coordinate-mapper.js
+│   │   │           ├── doc
+│   │   │           │   └── assets
+│   │   │           │       ├── main.js
+│   │   │           │       └── search.js
+│   │   │           ├── info-renderer.js
+│   │   │           ├── projectile-controller.js
+│   │   │           ├── projectile.js
+│   │   │           ├── projectile-model.js
+│   │   │           ├── projectile-renderer.js
+│   │   │           └── projectile-view.js
+│   │   ├── LICENSE
+│   │   ├── p10_ProjectileAnimation.md
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── public
+│   │   │   ├── index.html
+│   │   │   └── styles.css
+│   │   ├── README.md
+│   │   ├── scripts
+│   │   │   └── dev-server.js
+│   │   ├── src
+│   │   │   └── exercises
+│   │   │       ├── bouncing-ball-animation-example
+│   │   │       │   ├── animation.html
+│   │   │       │   ├── Ball.ts
+│   │   │       │   ├── main.ts
+│   │   │       │   ├── package.json
+│   │   │       │   ├── package-lock.json
+│   │   │       │   ├── README.md
+│   │   │       │   ├── styles.css
+│   │   │       │   ├── tsconfig.json
+│   │   │       │   └── ViewAnimation.ts
+│   │   │       ├── evaluation-exercise1-title
+│   │   │       │   ├── graphic-object-controller.ts
+│   │   │       │   ├── graphic-object.css
+│   │   │       │   ├── graphic-object.html
+│   │   │       │   ├── graphic-object-model.ts
+│   │   │       │   ├── graphic-object.ts
+│   │   │       │   └── graphic-object-view.ts
+│   │   │       └── home-work
+│   │   │           ├── axis-renderer.ts
+│   │   │           ├── coordinate-mapper.ts
+│   │   │           ├── doc
+│   │   │           │   ├── assets
+│   │   │           │   │   ├── highlight.css
+│   │   │           │   │   ├── main.js
+│   │   │           │   │   ├── search.js
+│   │   │           │   │   └── style.css
+│   │   │           │   ├── classes
+│   │   │           │   │   ├── axis_renderer.AxisRenderer.html
+│   │   │           │   │   ├── coordinate_mapper.CoordinateMapper.html
+│   │   │           │   │   ├── info_renderer.InfoRenderer.html
+│   │   │           │   │   ├── projectile_controller.ProjectileController.html
+│   │   │           │   │   ├── projectile_model.ProjectileModel.html
+│   │   │           │   │   ├── projectile_renderer.ProjectileRenderer.html
+│   │   │           │   │   └── projectile_view.ProjectileView.html
+│   │   │           │   ├── index.html
+│   │   │           │   ├── interfaces
+│   │   │           │   │   ├── axis_renderer.AxisStyle.html
+│   │   │           │   │   ├── info_renderer.InfoStyle.html
+│   │   │           │   │   ├── projectile_model.LaunchParameters.html
+│   │   │           │   │   ├── projectile_model.LaunchSummary.html
+│   │   │           │   │   ├── projectile_renderer.ProjectileStyle.html
+│   │   │           │   │   └── projectile_renderer.StoredTrajectory.html
+│   │   │           │   ├── modules
+│   │   │           │   │   ├── axis_renderer.html
+│   │   │           │   │   ├── coordinate_mapper.html
+│   │   │           │   │   ├── info_renderer.html
+│   │   │           │   │   ├── projectile_controller.html
+│   │   │           │   │   ├── projectile.html
+│   │   │           │   │   ├── projectile_model.html
+│   │   │           │   │   ├── projectile_renderer.html
+│   │   │           │   │   └── projectile_view.html
+│   │   │           │   └── modules.html
+│   │   │           ├── info-renderer.ts
+│   │   │           ├── projectile-controller.ts
+│   │   │           ├── projectile.css
+│   │   │           ├── projectile.html
+│   │   │           ├── projectile-model.ts
+│   │   │           ├── projectile-renderer.ts
+│   │   │           ├── projectile.ts
+│   │   │           ├── projectile-view.ts
+│   │   │           └── uml
+│   │   │               ├── projectile-uml.css
+│   │   │               ├── projectile-uml.html
+│   │   │               └── projectile-uml.svg
+│   │   ├── tsconfig.json
+│   │   └── typedoc.json
+│   ├── p11
+│   │   ├── dist
+│   │   │   └── exercises
+│   │   │       ├── evaluation-exercise1-title
+│   │   │       │   ├── axis-renderer.js
+│   │   │       │   ├── canvas-renderer.js
+│   │   │       │   ├── coordinateSystem.js
+│   │   │       │   ├── curve-renderer.js
+│   │   │       │   ├── grid-renderer.js
+│   │   │       │   ├── hypocycloid-controller.js
+│   │   │       │   ├── hypocycloid.js
+│   │   │       │   ├── hypocycloid-model.js
+│   │   │       │   └── hypocycloid-view.js
+│   │   │       └── home-work
+│   │   │           ├── canvas-renderer.js
+│   │   │           ├── controls-binder.js
+│   │   │           ├── curve-renderer.js
+│   │   │           ├── doc
+│   │   │           │   └── assets
+│   │   │           │       ├── main.js
+│   │   │           │       └── search.js
+│   │   │           ├── grid-renderer.js
+│   │   │           ├── lissajous-controller.js
+│   │   │           ├── lissajous.js
+│   │   │           ├── lissajous-model.js
+│   │   │           ├── lissajous-view.js
+│   │   │           ├── parameters.js
+│   │   │           ├── resize-manager.js
+│   │   │           └── slider-updater.js
+│   │   ├── get-docker.sh
+│   │   ├── LICENSE
+│   │   ├── p11_Events-Lissajous.md
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── public
+│   │   │   ├── index.html
+│   │   │   └── ull-bulma.css
+│   │   ├── README.md
+│   │   ├── scripts
+│   │   │   └── dev-server.js
+│   │   ├── sonar-project.properties
+│   │   ├── src
+│   │   │   └── exercises
+│   │   │       └── home-work
+│   │   │           ├── canvas-renderer.ts
+│   │   │           ├── controls-binder.ts
+│   │   │           ├── curve-renderer.ts
+│   │   │           ├── doc
+│   │   │           │   ├── assets
+│   │   │           │   │   ├── highlight.css
+│   │   │           │   │   ├── main.js
+│   │   │           │   │   ├── search.js
+│   │   │           │   │   └── style.css
+│   │   │           │   ├── classes
+│   │   │           │   │   ├── canvas_renderer.CanvasRenderer.html
+│   │   │           │   │   ├── controls_binder.ControlsBinder.html
+│   │   │           │   │   ├── curve_renderer.CurveRenderer.html
+│   │   │           │   │   ├── grid_renderer.GridRenderer.html
+│   │   │           │   │   ├── lissajous_controller.LissajousController.html
+│   │   │           │   │   ├── lissajous_model.LissajousModel.html
+│   │   │           │   │   ├── lissajous_view.LissajousView.html
+│   │   │           │   │   ├── parameters.Parameters.html
+│   │   │           │   │   ├── resize_manager.ResizeManager.html
+│   │   │           │   │   └── slider_updater.SliderUpdater.html
+│   │   │           │   ├── index.html
+│   │   │           │   ├── modules
+│   │   │           │   │   ├── canvas_renderer.html
+│   │   │           │   │   ├── controls_binder.html
+│   │   │           │   │   ├── curve_renderer.html
+│   │   │           │   │   ├── grid_renderer.html
+│   │   │           │   │   ├── lissajous_controller.html
+│   │   │           │   │   ├── lissajous.html
+│   │   │           │   │   ├── lissajous_model.html
+│   │   │           │   │   ├── lissajous_view.html
+│   │   │           │   │   ├── parameters.html
+│   │   │           │   │   ├── resize_manager.html
+│   │   │           │   │   └── slider_updater.html
+│   │   │           │   └── modules.html
+│   │   │           ├── grid-renderer.ts
+│   │   │           ├── lissajous-controller.ts
+│   │   │           ├── lissajous.html
+│   │   │           ├── lissajous-model.ts
+│   │   │           ├── lissajous.ts
+│   │   │           ├── lissajous-view.ts
+│   │   │           ├── parameters.ts
+│   │   │           ├── resize-manager.ts
+│   │   │           ├── slider-updater.ts
+│   │   │           ├── ull-bulma.scss
+│   │   │           └── uml
+│   │   │               ├── lissajous-uml.html
+│   │   │               └── lissajous-uml.svg
+│   │   ├── tsconfig.json
+│   │   └── typedoc.json
+│   ├── p12
+│   │   ├── dist
+│   │   │   ├── assets
+│   │   │   │   ├── hangman-uml-BPUfjKuK.svg
+│   │   │   │   └── p12Hangman-CzLZTGO5.js
+│   │   │   ├── hangman-0.png
+│   │   │   ├── hangman-1.png
+│   │   │   ├── hangman-2.png
+│   │   │   ├── hangman-3.png
+│   │   │   ├── hangman-4.png
+│   │   │   ├── hangman-5.png
+│   │   │   ├── hangman-6.png
+│   │   │   ├── index.html
+│   │   │   ├── src
+│   │   │   │   └── exercises
+│   │   │   │       └── home-work
+│   │   │   │           ├── docs
+│   │   │   │           │   ├── assets
+│   │   │   │           │   │   ├── highlight.css
+│   │   │   │           │   │   ├── main.js
+│   │   │   │           │   │   ├── search.js
+│   │   │   │           │   │   └── style.css
+│   │   │   │           │   ├── classes
+│   │   │   │           │   │   ├── hangman_controller.HangmanController.html
+│   │   │   │           │   │   └── hangman_view.HangmanView.html
+│   │   │   │           │   ├── index.html
+│   │   │   │           │   ├── interfaces
+│   │   │   │           │   │   ├── interfaces.IGameEventHandler.html
+│   │   │   │           │   │   ├── interfaces.IGameState.html
+│   │   │   │           │   │   └── interfaces.IGameStateObserver.html
+│   │   │   │           │   ├── modules
+│   │   │   │           │   │   ├── countries.html
+│   │   │   │           │   │   ├── hangman_controller.html
+│   │   │   │           │   │   ├── hangman.html
+│   │   │   │           │   │   ├── hangman_view.html
+│   │   │   │           │   │   └── interfaces.html
+│   │   │   │           │   ├── modules.html
+│   │   │   │           │   └── variables
+│   │   │   │           │       └── countries.COUNTRY_NAMES.html
+│   │   │   │           ├── game.html
+│   │   │   │           └── uml
+│   │   │   │               └── hangman-uml.html
+│   │   │   └── ull-bulma.css
+│   │   ├── index.html
+│   │   ├── LICENSE
+│   │   ├── p12_Hangman.md
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── public
+│   │   │   ├── hangman-0.png
+│   │   │   ├── hangman-1.png
+│   │   │   ├── hangman-2.png
+│   │   │   ├── hangman-3.png
+│   │   │   ├── hangman-4.png
+│   │   │   ├── hangman-5.png
+│   │   │   ├── hangman-6.png
+│   │   │   └── ull-bulma.css
+│   │   ├── README.md
+│   │   ├── scripts
+│   │   │   └── dev-server.js
+│   │   ├── sonar-project.properties
+│   │   ├── src
+│   │   │   └── exercises
+│   │   │       ├── evaluation-exercise1-title
+│   │   │       │   ├── axis-renderer.ts
+│   │   │       │   ├── canvas-renderer.ts
+│   │   │       │   ├── curve-renderer.ts
+│   │   │       │   ├── grid-renderer.ts
+│   │   │       │   ├── interfaces.ts
+│   │   │       │   ├── montecarlo-controller.ts
+│   │   │       │   ├── montecarlo.html
+│   │   │       │   ├── montecarlo-model.ts
+│   │   │       │   ├── montecarlo.ts
+│   │   │       │   └── montecarlo-view.ts
+│   │   │       └── home-work
+│   │   │           ├── countries.ts
+│   │   │           ├── doc
+│   │   │           ├── game.html
+│   │   │           ├── hangman-controller.ts
+│   │   │           ├── hangman-model.ts
+│   │   │           ├── hangman.ts
+│   │   │           ├── hangman-view.ts
+│   │   │           ├── interfaces.ts
+│   │   │           ├── ull-bulma.scss
+│   │   │           └── uml
+│   │   │               ├── hangman-uml.html
+│   │   │               └── hangman-uml.svg
+│   │   ├── tsconfig.json
+│   │   ├── typedoc.json
+│   │   └── vite.config.ts
+│   └── p13
+│       ├── dist
+│       │   ├── assets
+│       │   │   ├── balatro-uml-DiXoDbSJ.svg
+│       │   │   ├── modulepreload-polyfill-BxR_cmXS.js
+│       │   │   ├── p13Hangman-DZEIbWAi.js
+│       │   │   ├── poker1-DwC1x4np.js
+│       │   │   └── poker2-BPZdZa8r.js
+│       │   ├── img
+│       │   │   ├── jokers
+│       │   │   │   ├── blueJoker.png
+│       │   │   │   ├── evenSteven.png
+│       │   │   │   ├── fibonacci.png
+│       │   │   │   ├── gluttonousJoker.png
+│       │   │   │   ├── goldenJoker.png
+│       │   │   │   ├── greedyJoker.png
+│       │   │   │   ├── halfJoker.png
+│       │   │   │   ├── hiker.png
+│       │   │   │   ├── joker.png
+│       │   │   │   ├── jokerStencil.png
+│       │   │   │   ├── lustyJoker.png
+│       │   │   │   ├── mysticSummit.png
+│       │   │   │   ├── oddTodd.png
+│       │   │   │   ├── triboulet.png
+│       │   │   │   └── wrathfulJoker.png
+│       │   │   ├── others
+│       │   │   │   ├── aces.png
+│       │   │   │   ├── back_cards-07.png
+│       │   │   │   ├── blue_back.png
+│       │   │   │   ├── gray_back.png
+│       │   │   │   ├── green_back.png
+│       │   │   │   ├── honor_clubs.png
+│       │   │   │   ├── honor_diamond.png
+│       │   │   │   ├── honor_heart-14.png
+│       │   │   │   ├── honors_spade-14.png
+│       │   │   │   ├── purple_back.png
+│       │   │   │   ├── red_back.png
+│       │   │   │   └── yellow_back.png
+│       │   │   ├── planets
+│       │   │   │   ├── earth.png
+│       │   │   │   ├── jupiter.png
+│       │   │   │   ├── mars.png
+│       │   │   │   ├── mercury.png
+│       │   │   │   ├── neptune.png
+│       │   │   │   ├── pluto.png
+│       │   │   │   ├── saturn.png
+│       │   │   │   ├── uranus.png
+│       │   │   │   └── venus.png
+│       │   │   ├── PNG-cards-1.3
+│       │   │   │   ├── 10_of_clubs.png
+│       │   │   │   ├── 10_of_diamonds.png
+│       │   │   │   ├── 10_of_hearts.png
+│       │   │   │   ├── 10_of_spades.png
+│       │   │   │   ├── 2_of_clubs.png
+│       │   │   │   ├── 2_of_diamonds.png
+│       │   │   │   ├── 2_of_hearts.png
+│       │   │   │   ├── 2_of_spades.png
+│       │   │   │   ├── 3_of_clubs.png
+│       │   │   │   ├── 3_of_diamonds.png
+│       │   │   │   ├── 3_of_hearts.png
+│       │   │   │   ├── 3_of_spades.png
+│       │   │   │   ├── 4_of_clubs.png
+│       │   │   │   ├── 4_of_diamonds.png
+│       │   │   │   ├── 4_of_hearts.png
+│       │   │   │   ├── 4_of_spades.png
+│       │   │   │   ├── 5_of_clubs.png
+│       │   │   │   ├── 5_of_diamonds.png
+│       │   │   │   ├── 5_of_hearts.png
+│       │   │   │   ├── 5_of_spades.png
+│       │   │   │   ├── 6_of_clubs.png
+│       │   │   │   ├── 6_of_diamonds.png
+│       │   │   │   ├── 6_of_hearts.png
+│       │   │   │   ├── 6_of_spades.png
+│       │   │   │   ├── 7_of_clubs.png
+│       │   │   │   ├── 7_of_diamonds.png
+│       │   │   │   ├── 7_of_hearts.png
+│       │   │   │   ├── 7_of_spades.png
+│       │   │   │   ├── 8_of_clubs.png
+│       │   │   │   ├── 8_of_diamonds.png
+│       │   │   │   ├── 8_of_hearts.png
+│       │   │   │   ├── 8_of_spades.png
+│       │   │   │   ├── 9_of_clubs.png
+│       │   │   │   ├── 9_of_diamonds.png
+│       │   │   │   ├── 9_of_hearts.png
+│       │   │   │   ├── 9_of_spades.png
+│       │   │   │   ├── ace_of_clubs.png
+│       │   │   │   ├── ace_of_diamonds.png
+│       │   │   │   ├── ace_of_hearts.png
+│       │   │   │   ├── ace_of_spades2.png
+│       │   │   │   ├── ace_of_spades.png
+│       │   │   │   ├── black_joker.png
+│       │   │   │   ├── jack_of_clubs2.png
+│       │   │   │   ├── jack_of_clubs.png
+│       │   │   │   ├── jack_of_diamonds2.png
+│       │   │   │   ├── jack_of_diamonds.png
+│       │   │   │   ├── jack_of_hearts2.png
+│       │   │   │   ├── jack_of_hearts.png
+│       │   │   │   ├── jack_of_spades2.png
+│       │   │   │   ├── jack_of_spades.png
+│       │   │   │   ├── king_of_clubs2.png
+│       │   │   │   ├── king_of_clubs.png
+│       │   │   │   ├── king_of_diamonds2.png
+│       │   │   │   ├── king_of_diamonds.png
+│       │   │   │   ├── king_of_hearts2.png
+│       │   │   │   ├── king_of_hearts.png
+│       │   │   │   ├── king_of_spades2.png
+│       │   │   │   ├── king_of_spades.png
+│       │   │   │   ├── queen_of_clubs2.png
+│       │   │   │   ├── queen_of_clubs.png
+│       │   │   │   ├── queen_of_diamonds2.png
+│       │   │   │   ├── queen_of_diamonds.png
+│       │   │   │   ├── queen_of_hearts2.png
+│       │   │   │   ├── queen_of_hearts.png
+│       │   │   │   ├── queen_of_spades2.png
+│       │   │   │   ├── queen_of_spades.png
+│       │   │   │   └── red_joker.png
+│       │   │   ├── SVG-cards-1.3
+│       │   │   │   ├── 10_of_clubs.svg
+│       │   │   │   ├── 10_of_diamonds.svg
+│       │   │   │   ├── 10_of_hearts.svg
+│       │   │   │   ├── 10_of_spades.svg
+│       │   │   │   ├── 2_of_clubs.svg
+│       │   │   │   ├── 2_of_diamonds.svg
+│       │   │   │   ├── 2_of_hearts.svg
+│       │   │   │   ├── 2_of_spades.svg
+│       │   │   │   ├── 3_of_clubs.svg
+│       │   │   │   ├── 3_of_diamonds.svg
+│       │   │   │   ├── 3_of_hearts.svg
+│       │   │   │   ├── 3_of_spades.svg
+│       │   │   │   ├── 4_of_clubs.svg
+│       │   │   │   ├── 4_of_diamonds.svg
+│       │   │   │   ├── 4_of_hearts.svg
+│       │   │   │   ├── 4_of_spades.svg
+│       │   │   │   ├── 5_of_clubs.svg
+│       │   │   │   ├── 5_of_diamonds.svg
+│       │   │   │   ├── 5_of_hearts.svg
+│       │   │   │   ├── 5_of_spades.svg
+│       │   │   │   ├── 6_of_clubs.svg
+│       │   │   │   ├── 6_of_diamonds.svg
+│       │   │   │   ├── 6_of_hearts.svg
+│       │   │   │   ├── 6_of_spades.svg
+│       │   │   │   ├── 7_of_clubs.svg
+│       │   │   │   ├── 7_of_diamonds.svg
+│       │   │   │   ├── 7_of_hearts.svg
+│       │   │   │   ├── 7_of_spades.svg
+│       │   │   │   ├── 8_of_clubs.svg
+│       │   │   │   ├── 8_of_diamonds.svg
+│       │   │   │   ├── 8_of_hearts.svg
+│       │   │   │   ├── 8_of_spades.svg
+│       │   │   │   ├── 9_of_clubs.svg
+│       │   │   │   ├── 9_of_diamonds.svg
+│       │   │   │   ├── 9_of_hearts.svg
+│       │   │   │   ├── 9_of_spades.svg
+│       │   │   │   ├── ace_of_clubs.svg
+│       │   │   │   ├── ace_of_diamonds.svg
+│       │   │   │   ├── ace_of_hearts.svg
+│       │   │   │   ├── ace_of_spades2.svg
+│       │   │   │   ├── ace_of_spades.svg
+│       │   │   │   ├── black_joker.svg
+│       │   │   │   ├── jack_of_clubs2.svg
+│       │   │   │   ├── jack_of_clubs.svg
+│       │   │   │   ├── jack_of_diamonds2.svg
+│       │   │   │   ├── jack_of_diamonds.svg
+│       │   │   │   ├── jack_of_hearts2.svg
+│       │   │   │   ├── jack_of_hearts.svg
+│       │   │   │   ├── jack_of_spades2.svg
+│       │   │   │   ├── jack_of_spades.svg
+│       │   │   │   ├── king_of_clubs2.svg
+│       │   │   │   ├── king_of_clubs.svg
+│       │   │   │   ├── king_of_diamonds2.svg
+│       │   │   │   ├── king_of_diamonds.svg
+│       │   │   │   ├── king_of_hearts2.svg
+│       │   │   │   ├── king_of_hearts.svg
+│       │   │   │   ├── king_of_spades2.svg
+│       │   │   │   ├── king_of_spades.svg
+│       │   │   │   ├── queen_of_clubs2.svg
+│       │   │   │   ├── queen_of_clubs.svg
+│       │   │   │   ├── queen_of_diamonds2.svg
+│       │   │   │   ├── queen_of_diamonds.svg
+│       │   │   │   ├── queen_of_hearts2.svg
+│       │   │   │   ├── queen_of_hearts.svg
+│       │   │   │   ├── queen_of_spades2.svg
+│       │   │   │   ├── queen_of_spades.svg
+│       │   │   │   └── red_joker.svg
+│       │   │   └── tarots
+│       │   │       ├── death.png
+│       │   │       ├── strength.png
+│       │   │       ├── theEmperor.png
+│       │   │       ├── theEmpress.png
+│       │   │       ├── theHangedMan.png
+│       │   │       ├── theHermit.png
+│       │   │       ├── theMoon.png
+│       │   │       ├── theStar.png
+│       │   │       ├── theSun.png
+│       │   │       └── theWorld.png
+│       │   ├── index.html
+│       │   ├── src
+│       │   │   └── exercises
+│       │   │       ├── docs
+│       │   │       │   ├── assets
+│       │   │       │   │   ├── highlight.css
+│       │   │       │   │   ├── main.js
+│       │   │       │   │   ├── search.js
+│       │   │       │   │   └── style.css
+│       │   │       │   ├── classes
+│       │   │       │   │   ├── home_work_balatro_controller.BalatroController.html
+│       │   │       │   │   ├── home_work_balatro_model.BalatroModel.html
+│       │   │       │   │   ├── home_work_balatro_view.BalatroView.html
+│       │   │       │   │   ├── home_work_canvas_renderer.CanvasRenderer.html
+│       │   │       │   │   ├── home_work_card.Card.html
+│       │   │       │   │   ├── home_work_deck.Deck.html
+│       │   │       │   │   ├── home_work_hand_evaluator.HandEvaluator.html
+│       │   │       │   │   ├── home_work_html_element_manager.HtmlElementManager.html
+│       │   │       │   │   ├── Poker1_canvas_renderer.CanvasRenderer.html
+│       │   │       │   │   ├── Poker1_card.Card.html
+│       │   │       │   │   ├── Poker1_deck.Deck.html
+│       │   │       │   │   ├── Poker1_html_element_manager.HtmlElementManager.html
+│       │   │       │   │   ├── Poker1_poker_controller.PokerController.html
+│       │   │       │   │   ├── Poker1_poker_model.PokerModel.html
+│       │   │       │   │   └── Poker1_poker_view.PokerView.html
+│       │   │       │   ├── index.html
+│       │   │       │   ├── interfaces
+│       │   │       │   │   ├── home_work_interfaces.ICard.html
+│       │   │       │   │   ├── home_work_interfaces.IScorePreview.html
+│       │   │       │   │   ├── Poker1_interfaces.ICard.html
+│       │   │       │   │   └── Poker1_interfaces.IScorePreview.html
+│       │   │       │   ├── modules
+│       │   │       │   │   ├── home_work_balatro_controller.html
+│       │   │       │   │   ├── home_work_balatro.html
+│       │   │       │   │   ├── home_work_balatro_model.html
+│       │   │       │   │   ├── home_work_balatro_view.html
+│       │   │       │   │   ├── home_work_canvas_renderer.html
+│       │   │       │   │   ├── home_work_card.html
+│       │   │       │   │   ├── home_work_deck.html
+│       │   │       │   │   ├── home_work_hand_evaluator.html
+│       │   │       │   │   ├── home_work_html_element_manager.html
+│       │   │       │   │   ├── home_work_interfaces.html
+│       │   │       │   │   ├── Poker1_canvas_renderer.html
+│       │   │       │   │   ├── Poker1_card.html
+│       │   │       │   │   ├── Poker1_deck.html
+│       │   │       │   │   ├── Poker1_html_element_manager.html
+│       │   │       │   │   ├── Poker1_interfaces.html
+│       │   │       │   │   ├── Poker1_poker_controller.html
+│       │   │       │   │   ├── Poker1_poker.html
+│       │   │       │   │   ├── Poker1_poker_model.html
+│       │   │       │   │   └── Poker1_poker_view.html
+│       │   │       │   └── modules.html
+│       │   │       ├── home-work
+│       │   │       │   ├── balatro.html
+│       │   │       │   └── uml
+│       │   │       │       └── balatro-uml.html
+│       │   │       ├── Poker1
+│       │   │       │   └── poker.html
+│       │   │       └── Poker2
+│       │   │           └── poker.html
+│       │   └── ull-bulma.css
+│       ├── index.html
+│       ├── jest.config.cjs
+│       ├── LICENSE
+│       ├── p13_Events-Balatro.md
+│       ├── package.json
+│       ├── package-lock.json
+│       ├── public
+│       │   ├── img
+│       │   │   ├── jokers
+│       │   │   │   ├── blueJoker.png
+│       │   │   │   ├── evenSteven.png
+│       │   │   │   ├── fibonacci.png
+│       │   │   │   ├── gluttonousJoker.png
+│       │   │   │   ├── goldenJoker.png
+│       │   │   │   ├── greedyJoker.png
+│       │   │   │   ├── halfJoker.png
+│       │   │   │   ├── hiker.png
+│       │   │   │   ├── joker.png
+│       │   │   │   ├── jokerStencil.png
+│       │   │   │   ├── lustyJoker.png
+│       │   │   │   ├── mysticSummit.png
+│       │   │   │   ├── oddTodd.png
+│       │   │   │   ├── triboulet.png
+│       │   │   │   └── wrathfulJoker.png
+│       │   │   ├── others
+│       │   │   │   ├── aces.png
+│       │   │   │   ├── back_cards-07.png
+│       │   │   │   ├── blue_back.png
+│       │   │   │   ├── gray_back.png
+│       │   │   │   ├── green_back.png
+│       │   │   │   ├── honor_clubs.png
+│       │   │   │   ├── honor_diamond.png
+│       │   │   │   ├── honor_heart-14.png
+│       │   │   │   ├── honors_spade-14.png
+│       │   │   │   ├── purple_back.png
+│       │   │   │   ├── red_back.png
+│       │   │   │   └── yellow_back.png
+│       │   │   ├── planets
+│       │   │   │   ├── earth.png
+│       │   │   │   ├── jupiter.png
+│       │   │   │   ├── mars.png
+│       │   │   │   ├── mercury.png
+│       │   │   │   ├── neptune.png
+│       │   │   │   ├── pluto.png
+│       │   │   │   ├── saturn.png
+│       │   │   │   ├── uranus.png
+│       │   │   │   └── venus.png
+│       │   │   ├── PNG-cards-1.3
+│       │   │   │   ├── 10_of_clubs.png
+│       │   │   │   ├── 10_of_diamonds.png
+│       │   │   │   ├── 10_of_hearts.png
+│       │   │   │   ├── 10_of_spades.png
+│       │   │   │   ├── 2_of_clubs.png
+│       │   │   │   ├── 2_of_diamonds.png
+│       │   │   │   ├── 2_of_hearts.png
+│       │   │   │   ├── 2_of_spades.png
+│       │   │   │   ├── 3_of_clubs.png
+│       │   │   │   ├── 3_of_diamonds.png
+│       │   │   │   ├── 3_of_hearts.png
+│       │   │   │   ├── 3_of_spades.png
+│       │   │   │   ├── 4_of_clubs.png
+│       │   │   │   ├── 4_of_diamonds.png
+│       │   │   │   ├── 4_of_hearts.png
+│       │   │   │   ├── 4_of_spades.png
+│       │   │   │   ├── 5_of_clubs.png
+│       │   │   │   ├── 5_of_diamonds.png
+│       │   │   │   ├── 5_of_hearts.png
+│       │   │   │   ├── 5_of_spades.png
+│       │   │   │   ├── 6_of_clubs.png
+│       │   │   │   ├── 6_of_diamonds.png
+│       │   │   │   ├── 6_of_hearts.png
+│       │   │   │   ├── 6_of_spades.png
+│       │   │   │   ├── 7_of_clubs.png
+│       │   │   │   ├── 7_of_diamonds.png
+│       │   │   │   ├── 7_of_hearts.png
+│       │   │   │   ├── 7_of_spades.png
+│       │   │   │   ├── 8_of_clubs.png
+│       │   │   │   ├── 8_of_diamonds.png
+│       │   │   │   ├── 8_of_hearts.png
+│       │   │   │   ├── 8_of_spades.png
+│       │   │   │   ├── 9_of_clubs.png
+│       │   │   │   ├── 9_of_diamonds.png
+│       │   │   │   ├── 9_of_hearts.png
+│       │   │   │   ├── 9_of_spades.png
+│       │   │   │   ├── ace_of_clubs.png
+│       │   │   │   ├── ace_of_diamonds.png
+│       │   │   │   ├── ace_of_hearts.png
+│       │   │   │   ├── ace_of_spades2.png
+│       │   │   │   ├── ace_of_spades.png
+│       │   │   │   ├── black_joker.png
+│       │   │   │   ├── jack_of_clubs2.png
+│       │   │   │   ├── jack_of_clubs.png
+│       │   │   │   ├── jack_of_diamonds2.png
+│       │   │   │   ├── jack_of_diamonds.png
+│       │   │   │   ├── jack_of_hearts2.png
+│       │   │   │   ├── jack_of_hearts.png
+│       │   │   │   ├── jack_of_spades2.png
+│       │   │   │   ├── jack_of_spades.png
+│       │   │   │   ├── king_of_clubs2.png
+│       │   │   │   ├── king_of_clubs.png
+│       │   │   │   ├── king_of_diamonds2.png
+│       │   │   │   ├── king_of_diamonds.png
+│       │   │   │   ├── king_of_hearts2.png
+│       │   │   │   ├── king_of_hearts.png
+│       │   │   │   ├── king_of_spades2.png
+│       │   │   │   ├── king_of_spades.png
+│       │   │   │   ├── queen_of_clubs2.png
+│       │   │   │   ├── queen_of_clubs.png
+│       │   │   │   ├── queen_of_diamonds2.png
+│       │   │   │   ├── queen_of_diamonds.png
+│       │   │   │   ├── queen_of_hearts2.png
+│       │   │   │   ├── queen_of_hearts.png
+│       │   │   │   ├── queen_of_spades2.png
+│       │   │   │   ├── queen_of_spades.png
+│       │   │   │   └── red_joker.png
+│       │   │   ├── SVG-cards-1.3
+│       │   │   │   ├── 10_of_clubs.svg
+│       │   │   │   ├── 10_of_diamonds.svg
+│       │   │   │   ├── 10_of_hearts.svg
+│       │   │   │   ├── 10_of_spades.svg
+│       │   │   │   ├── 2_of_clubs.svg
+│       │   │   │   ├── 2_of_diamonds.svg
+│       │   │   │   ├── 2_of_hearts.svg
+│       │   │   │   ├── 2_of_spades.svg
+│       │   │   │   ├── 3_of_clubs.svg
+│       │   │   │   ├── 3_of_diamonds.svg
+│       │   │   │   ├── 3_of_hearts.svg
+│       │   │   │   ├── 3_of_spades.svg
+│       │   │   │   ├── 4_of_clubs.svg
+│       │   │   │   ├── 4_of_diamonds.svg
+│       │   │   │   ├── 4_of_hearts.svg
+│       │   │   │   ├── 4_of_spades.svg
+│       │   │   │   ├── 5_of_clubs.svg
+│       │   │   │   ├── 5_of_diamonds.svg
+│       │   │   │   ├── 5_of_hearts.svg
+│       │   │   │   ├── 5_of_spades.svg
+│       │   │   │   ├── 6_of_clubs.svg
+│       │   │   │   ├── 6_of_diamonds.svg
+│       │   │   │   ├── 6_of_hearts.svg
+│       │   │   │   ├── 6_of_spades.svg
+│       │   │   │   ├── 7_of_clubs.svg
+│       │   │   │   ├── 7_of_diamonds.svg
+│       │   │   │   ├── 7_of_hearts.svg
+│       │   │   │   ├── 7_of_spades.svg
+│       │   │   │   ├── 8_of_clubs.svg
+│       │   │   │   ├── 8_of_diamonds.svg
+│       │   │   │   ├── 8_of_hearts.svg
+│       │   │   │   ├── 8_of_spades.svg
+│       │   │   │   ├── 9_of_clubs.svg
+│       │   │   │   ├── 9_of_diamonds.svg
+│       │   │   │   ├── 9_of_hearts.svg
+│       │   │   │   ├── 9_of_spades.svg
+│       │   │   │   ├── ace_of_clubs.svg
+│       │   │   │   ├── ace_of_diamonds.svg
+│       │   │   │   ├── ace_of_hearts.svg
+│       │   │   │   ├── ace_of_spades2.svg
+│       │   │   │   ├── ace_of_spades.svg
+│       │   │   │   ├── black_joker.svg
+│       │   │   │   ├── jack_of_clubs2.svg
+│       │   │   │   ├── jack_of_clubs.svg
+│       │   │   │   ├── jack_of_diamonds2.svg
+│       │   │   │   ├── jack_of_diamonds.svg
+│       │   │   │   ├── jack_of_hearts2.svg
+│       │   │   │   ├── jack_of_hearts.svg
+│       │   │   │   ├── jack_of_spades2.svg
+│       │   │   │   ├── jack_of_spades.svg
+│       │   │   │   ├── king_of_clubs2.svg
+│       │   │   │   ├── king_of_clubs.svg
+│       │   │   │   ├── king_of_diamonds2.svg
+│       │   │   │   ├── king_of_diamonds.svg
+│       │   │   │   ├── king_of_hearts2.svg
+│       │   │   │   ├── king_of_hearts.svg
+│       │   │   │   ├── king_of_spades2.svg
+│       │   │   │   ├── king_of_spades.svg
+│       │   │   │   ├── queen_of_clubs2.svg
+│       │   │   │   ├── queen_of_clubs.svg
+│       │   │   │   ├── queen_of_diamonds2.svg
+│       │   │   │   ├── queen_of_diamonds.svg
+│       │   │   │   ├── queen_of_hearts2.svg
+│       │   │   │   ├── queen_of_hearts.svg
+│       │   │   │   ├── queen_of_spades2.svg
+│       │   │   │   ├── queen_of_spades.svg
+│       │   │   │   └── red_joker.svg
+│       │   │   └── tarots
+│       │   │       ├── death.png
+│       │   │       ├── strength.png
+│       │   │       ├── theEmperor.png
+│       │   │       ├── theEmpress.png
+│       │   │       ├── theHangedMan.png
+│       │   │       ├── theHermit.png
+│       │   │       ├── theMoon.png
+│       │   │       ├── theStar.png
+│       │   │       ├── theSun.png
+│       │   │       └── theWorld.png
+│       │   └── ull-bulma.css
+│       ├── README.md
+│       ├── sonar-project.properties
+│       ├── src
+│       │   └── exercises
+│       │       ├── home-work
+│       │       │   ├── balatro-controller.ts
+│       │       │   ├── balatro.html
+│       │       │   ├── balatro-model.ts
+│       │       │   ├── balatro.ts
+│       │       │   ├── balatro-view.ts
+│       │       │   ├── canvas-renderer.ts
+│       │       │   ├── card.ts
+│       │       │   ├── deck.ts
+│       │       │   ├── doc
+│       │       │   ├── hand-evaluator.ts
+│       │       │   ├── html-element-manager.ts
+│       │       │   ├── interfaces.ts
+│       │       │   ├── ull-bulma.scss
+│       │       │   └── uml
+│       │       │       ├── balatro-uml.html
+│       │       │       └── balatro-uml.svg
+│       │       ├── Poker1
+│       │       │   ├── canvas-renderer.ts
+│       │       │   ├── card.ts
+│       │       │   ├── deck.ts
+│       │       │   ├── doc
+│       │       │   ├── html-element-manager.ts
+│       │       │   ├── interfaces.ts
+│       │       │   ├── poker-controller.ts
+│       │       │   ├── poker.html
+│       │       │   ├── poker-model.ts
+│       │       │   ├── poker.ts
+│       │       │   └── poker-view.ts
+│       │       └── Poker2
+│       │           ├── canvas-renderer.ts
+│       │           ├── card.ts
+│       │           ├── deck.ts
+│       │           ├── doc
+│       │           ├── hand-evaluator.ts
+│       │           ├── html-element-manager.ts
+│       │           ├── interfaces.ts
+│       │           ├── poker-controller.ts
+│       │           ├── poker.html
+│       │           ├── poker-model.ts
+│       │           ├── poker.ts
+│       │           └── poker-view.ts
+│       ├── tests
+│       │   ├── balatro-model.test.ts
+│       │   ├── card.test.ts
+│       │   ├── deck.test.ts
+│       │   └── hand-evaluator.test.ts
+│       ├── tsconfig.json
+│       ├── typedoc.json
+│       └── vite.config.ts
+├── tree.txt
+├── ull-bulma.css
+└── vite.config.ts
+
+200 directories, 1107 files
