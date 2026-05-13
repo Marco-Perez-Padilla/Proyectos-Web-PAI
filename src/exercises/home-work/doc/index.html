@@ -1,0 +1,183 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>Práctica 11 - Animations: Projectile Animation - v1.0.0</title><meta name="description" content="Documentation for Práctica 11 - Animations: Projectile Animation - v1.0.0"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base=".">
+<div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<div class="field">
+<div id="tsd-toolbar-links"></div></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">Práctica 11 - Animations: Projectile Animation - v1.0.0</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
+<div class="container container-main">
+<div class="col-8 col-content">
+<div class="tsd-page-title">
+<h2>Práctica 11 - Animations: Projectile Animation - v1.0.0</h2></div>
+<div class="tsd-panel tsd-typography"><p><a href="https://classroom.github.com/a/5VpVYbYr"><img src="https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg" alt="Review Assignment Due Date"></a>
+<a href="https://classroom.github.com/online_ide?assignment_repo_id=23565016&assignment_repo_type=AssignmentRepo"><img src="https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg" alt="Open in Visual Studio Code"></a></p>
+
+<a href="#práctica-11--programación-gráfica-orientada-a-eventos-curvas-de-lissajous" id="práctica-11--programación-gráfica-orientada-a-eventos-curvas-de-lissajous" style="color: inherit; text-decoration: none;">
+  <h1>Práctica 11 — Programación gráfica orientada a eventos: Curvas de Lissajous</h1>
+</a>
+<p><strong>Marco Pérez Padilla</strong> · Programación de Aplicaciones Interactivas · ULL</p>
+<hr>
+
+<a href="#descripción" id="descripción" style="color: inherit; text-decoration: none;">
+  <h2>Descripción</h2>
+</a>
+<p>Aplicación web de página única (SPA) que visualiza curvas de Lissajous de forma interactiva. Está desarrollada en TypeScript puro sobre la Canvas API, siguiendo la arquitectura Modelo-Vista-Controlador (MVC). La interfaz utiliza el framework Bulma personalizado con los colores y la tipografía corporativa de la Universidad de La Laguna.</p>
+<p>La aplicación permite:</p>
+<ul>
+<li>Modificar en tiempo real los parámetros de la curva: frecuencias <code>a</code> y <code>b</code>, desfase <code>φ</code>, amplitudes <code>A</code> y <code>B</code>.</li>
+<li>Animar automáticamente el desfase <code>φ</code> con un checkbox.</li>
+<li>Visualizar la cuadrícula de referencia y la trayectoria completa de la curva.</li>
+<li>Redimensionar el canvas de forma adaptativa al tamaño del navegador.</li>
+<li>Análisis estático de código con SonarQube.</li>
+</ul>
+<hr>
+
+<a href="#patrones-de-diseño-aplicados" id="patrones-de-diseño-aplicados" style="color: inherit; text-decoration: none;">
+  <h2>Patrones de diseño aplicados</h2>
+</a>
+<table>
+<thead>
+<tr>
+<th>Patrón</th>
+<th>Clase</th>
+<th>Responsabilidad</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MVC</td>
+<td><code>LissajousModel</code>, <code>LissajousView</code>, <code>LissajousController</code></td>
+<td>Separación de lógica, renderizado y control de entrada.</td>
+</tr>
+<tr>
+<td>Facade</td>
+<td><code>LissajousView</code></td>
+<td>Orquesta los renderers de cuadrícula, curva y redimensionado sin exponer su implementación.</td>
+</tr>
+<tr>
+<td>Single Responsibility</td>
+<td><code>GridRenderer</code>, <code>CurveRenderer</code>, <code>CanvasRenderer</code>, <code>ResizeManager</code>, <code>ControlsBinder</code>, <code>SliderUpdater</code></td>
+<td>Cada clase tiene una única tarea bien definida.</td>
+</tr>
+</tbody></table>
+<hr>
+
+<a href="#estructura-del-proyecto" id="estructura-del-proyecto" style="color: inherit; text-decoration: none;">
+  <h2>Estructura del proyecto</h2>
+</a>
+<pre><code><span class="hl-0">.</span><br/><span class="hl-0">├── </span><span class="hl-1">public</span><span class="hl-0">/            </span><br/><span class="hl-0">│   ├── </span><span class="hl-1">index</span><span class="hl-0">.</span><span class="hl-1">html</span><span class="hl-0">            </span><br/><span class="hl-0">│   └── </span><span class="hl-1">ull</span><span class="hl-0">-</span><span class="hl-1">bulma</span><span class="hl-0">.</span><span class="hl-1">css</span><span class="hl-0">         </span><br/><span class="hl-0">├── </span><span class="hl-1">src</span><span class="hl-0">/</span><br/><span class="hl-0">│   └── </span><span class="hl-1">exercises</span><span class="hl-0">/</span><br/><span class="hl-0">│       └── </span><span class="hl-1">home</span><span class="hl-0">-</span><span class="hl-1">work</span><span class="hl-0">/        </span><br/><span class="hl-0">│           ├── </span><span class="hl-1">lissajous</span><span class="hl-0">.</span><span class="hl-1">html</span><br/><span class="hl-0">│           ├── </span><span class="hl-1">lissajous</span><span class="hl-0">.</span><span class="hl-1">ts</span><br/><span class="hl-0">│           ├── </span><span class="hl-1">lissajous</span><span class="hl-0">-</span><span class="hl-1">model</span><span class="hl-0">.</span><span class="hl-1">ts</span><br/><span class="hl-0">│           ├── </span><span class="hl-1">lissajous</span><span class="hl-0">-</span><span class="hl-1">view</span><span class="hl-0">.</span><span class="hl-1">ts</span><br/><span class="hl-0">│           ├── </span><span class="hl-1">lissajous</span><span class="hl-0">-</span><span class="hl-1">controller</span><span class="hl-0">.</span><span class="hl-1">ts</span><br/><span class="hl-0">│           ├── </span><span class="hl-1">canvas</span><span class="hl-0">-</span><span class="hl-1">renderer</span><span class="hl-0">.</span><span class="hl-1">ts</span><br/><span class="hl-0">│           ├── </span><span class="hl-1">grid</span><span class="hl-0">-</span><span class="hl-1">renderer</span><span class="hl-0">.</span><span class="hl-1">ts</span><br/><span class="hl-0">│           ├── </span><span class="hl-1">curve</span><span class="hl-0">-</span><span class="hl-1">renderer</span><span class="hl-0">.</span><span class="hl-1">ts</span><br/><span class="hl-0">│           ├── </span><span class="hl-1">resize</span><span class="hl-0">-</span><span class="hl-1">manager</span><span class="hl-0">.</span><span class="hl-1">ts</span><br/><span class="hl-0">│           ├── </span><span class="hl-1">controls</span><span class="hl-0">-</span><span class="hl-1">binder</span><span class="hl-0">.</span><span class="hl-1">ts</span><br/><span class="hl-0">│           ├── </span><span class="hl-1">slider</span><span class="hl-0">-</span><span class="hl-1">updater</span><span class="hl-0">.</span><span class="hl-1">ts</span><br/><span class="hl-0">│           ├── </span><span class="hl-1">parameters</span><span class="hl-0">.</span><span class="hl-1">ts</span><br/><span class="hl-0">│           ├── </span><span class="hl-1">ull</span><span class="hl-0">-</span><span class="hl-1">bulma</span><span class="hl-0">.</span><span class="hl-1">scss</span><br/><span class="hl-0">│           ├── </span><span class="hl-1">doc</span><span class="hl-0">/      </span><br/><span class="hl-0">│           └── </span><span class="hl-1">uml</span><span class="hl-0">/         </span><br/><span class="hl-0">├── </span><span class="hl-1">package</span><span class="hl-0">.</span><span class="hl-1">json</span><br/><span class="hl-0">├── </span><span class="hl-1">tsconfig</span><span class="hl-0">.</span><span class="hl-1">json</span><br/><span class="hl-0">├── </span><span class="hl-1">typedoc</span><span class="hl-0">.</span><span class="hl-1">json</span><br/><span class="hl-0">├── </span><span class="hl-1">sonar</span><span class="hl-0">-</span><span class="hl-1">project</span><span class="hl-0">.</span><span class="hl-1">properties</span><br/><span class="hl-0">└── </span><span class="hl-2">README</span><span class="hl-0">.</span><span class="hl-1">md</span>
+</code></pre>
+<hr>
+
+<a href="#instalación-y-uso" id="instalación-y-uso" style="color: inherit; text-decoration: none;">
+  <h2>Instalación y uso</h2>
+</a>
+
+<a href="#requisitos-previos" id="requisitos-previos" style="color: inherit; text-decoration: none;">
+  <h3>Requisitos previos</h3>
+</a>
+<ul>
+<li>Node.js (v18 o superior)</li>
+<li>npm</li>
+</ul>
+
+<a href="#instalación-de-dependencias" id="instalación-de-dependencias" style="color: inherit; text-decoration: none;">
+  <h3>Instalación de dependencias</h3>
+</a>
+<pre><code class="language-bash"><span class="hl-3">npm</span><span class="hl-0"> </span><span class="hl-4">install</span>
+</code></pre>
+<p>Este comando instala TypeScript, Vite, Bulma, Sass, SonarQube Scanner y demás herramientas necesarias.</p>
+
+<a href="#compilación-del-código-typescript-y-construcción-con-vite" id="compilación-del-código-typescript-y-construcción-con-vite" style="color: inherit; text-decoration: none;">
+  <h3>Compilación del código TypeScript y construcción con Vite</h3>
+</a>
+<pre><code class="language-bash"><span class="hl-3">npm</span><span class="hl-0"> </span><span class="hl-4">run</span><span class="hl-0"> </span><span class="hl-4">build:p11</span>
+</code></pre>
+<p>Este script ejecuta <code>tsc</code>, generando la salida en la carpeta <code>dist/</code>.</p>
+
+<a href="#compilación-de-estilos-scss-personalizados" id="compilación-de-estilos-scss-personalizados" style="color: inherit; text-decoration: none;">
+  <h3>Compilación de estilos SCSS personalizados</h3>
+</a>
+<pre><code class="language-bash"><span class="hl-3">npm</span><span class="hl-0"> </span><span class="hl-4">run</span><span class="hl-0"> </span><span class="hl-4">build:css</span>
+</code></pre>
+<p>El CSS resultante se escribe en <code>public/ull-bulma.css</code>.</p>
+
+<a href="#construcción-completa-typescript--typedoc" id="construcción-completa-typescript--typedoc" style="color: inherit; text-decoration: none;">
+  <h3>Construcción completa (TypeScript + TypeDoc)</h3>
+</a>
+<pre><code class="language-bash"><span class="hl-3">npm</span><span class="hl-0"> </span><span class="hl-4">run</span><span class="hl-0"> </span><span class="hl-4">build:all</span>
+</code></pre>
+
+<a href="#servidor-estático-con-express" id="servidor-estático-con-express" style="color: inherit; text-decoration: none;">
+  <h3>Servidor estático con Express</h3>
+</a>
+<pre><code class="language-bash"><span class="hl-3">npm</span><span class="hl-0"> </span><span class="hl-4">run</span><span class="hl-0"> </span><span class="hl-4">run</span>
+</code></pre>
+<p>Este comando inicia un servidor Express que sirve los archivos generados en <code>dist/</code> y <code>public/</code>.</p>
+
+<a href="#generación-de-documentación-con-typedoc" id="generación-de-documentación-con-typedoc" style="color: inherit; text-decoration: none;">
+  <h3>Generación de documentación con TypeDoc</h3>
+</a>
+<pre><code class="language-bash"><span class="hl-3">npm</span><span class="hl-0"> </span><span class="hl-4">run</span><span class="hl-0"> </span><span class="hl-4">docs</span>
+</code></pre>
+<p>La documentación se genera en <code>src/exercises/home-work/doc/</code> y puede consultarse a través de la página índice.</p>
+
+<a href="#análisis-con-sonarqube" id="análisis-con-sonarqube" style="color: inherit; text-decoration: none;">
+  <h3>Análisis con SonarQube</h3>
+</a>
+<p>Asegúrate de tener un servidor SonarQube local ejecutándose (por ejemplo, con Docker) y de haber configurado el token en <code>sonar-project.properties</code>. Luego ejecuta:</p>
+<pre><code class="language-bash"><span class="hl-3">npm</span><span class="hl-0"> </span><span class="hl-4">install</span><span class="hl-0"> </span><span class="hl-5">-g</span><span class="hl-0"> </span><span class="hl-4">@sonar/scan</span><br/><span class="hl-3">sonar</span><span class="hl-0"> </span><span class="hl-6">\</span><br/><span class="hl-0">  </span><span class="hl-5">-Dsonar.host.url=http://localhost:9000</span><span class="hl-0"> </span><span class="hl-6">\</span><br/><span class="hl-0">  </span><span class="hl-5">-Dsonar.token=</span><span class="hl-0">&lt;</span><span class="hl-5">TOKEN</span><span class="hl-0">&gt;</span><span class="hl-0"> </span><span class="hl-6">\</span><br/><span class="hl-0">  </span><span class="hl-5">-Dsonar.projectKey=</span><span class="hl-0">&lt;</span><span class="hl-5">PROJECTKEY</span><span class="hl-0">&gt;</span>
+</code></pre>
+<hr>
+
+<a href="#live-demo" id="live-demo" style="color: inherit; text-decoration: none;">
+  <h2>Live Demo</h2>
+</a>
+<p>Tras ejecutar <code>npm run run</code>, accede a la página principal desde tu navegador para ver la aplicación en funcionamiento.</p>
+<hr>
+
+<a href="#autor" id="autor" style="color: inherit; text-decoration: none;">
+  <h2>Autor</h2>
+</a>
+<p>Marco Pérez Padilla — <a href="mailto:alu0101469348@ull.edu.es">alu0101469348@ull.edu.es</a></p>
+<hr>
+
+<a href="#licencia" id="licencia" style="color: inherit; text-decoration: none;">
+  <h2>Licencia</h2>
+</a>
+<p>Este proyecto es de código abierto y se distribuye bajo la Licencia MIT.</p>
+</div></div>
+<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<nav class="tsd-navigation primary">
+<details class="tsd-index-accordion" open><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Modules</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li class="current selected"><a href="modules.html">Práctica 11 -<wbr/> <wbr/>Animations: <wbr/>Projectile <wbr/>Animation -<wbr/> v1.0.0</a>
+<ul>
+<li class="tsd-kind-module"><a href="modules/canvas_renderer.html">canvas-<wbr/>renderer</a></li>
+<li class="tsd-kind-module"><a href="modules/controls_binder.html">controls-<wbr/>binder</a></li>
+<li class="tsd-kind-module"><a href="modules/curve_renderer.html">curve-<wbr/>renderer</a></li>
+<li class="tsd-kind-module"><a href="modules/grid_renderer.html">grid-<wbr/>renderer</a></li>
+<li class="tsd-kind-module"><a href="modules/lissajous.html">lissajous</a></li>
+<li class="tsd-kind-module"><a href="modules/lissajous_controller.html">lissajous-<wbr/>controller</a></li>
+<li class="tsd-kind-module"><a href="modules/lissajous_model.html">lissajous-<wbr/>model</a></li>
+<li class="tsd-kind-module"><a href="modules/lissajous_view.html">lissajous-<wbr/>view</a></li>
+<li class="tsd-kind-module"><a href="modules/parameters.html">parameters</a></li>
+<li class="tsd-kind-module"><a href="modules/resize_manager.html">resize-<wbr/>manager</a></li>
+<li class="tsd-kind-module"><a href="modules/slider_updater.html">slider-<wbr/>updater</a></li></ul></li></ul></div></details></nav></div></div>
+<div class="container tsd-generator">
+<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
+<div class="overlay"></div><script src="assets/main.js"></script></body></html>

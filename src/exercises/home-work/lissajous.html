@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marco Pérez Padilla — Curvas de Lissajous</title>
+  <link rel="stylesheet" href="/ull-bulma.css">
+  <script defer src="https://use.fontawesome.com/releases/v6.7.2/js/all.js"></script>
+  <script defer type="module" src="/exercises/home-work/lissajous.js"></script>
+</head>
+<body>
+
+<div class="app-wrapper">
+
+  <section class="hero is-primary">
+    <div class="hero-body" style="padding: 0.75rem 1.5rem;">
+      <div class="container">
+        <h1 class="title has-text-white">Curvas de Lissajous</h1>
+        <h2 class="subtitle has-text-white-ter">Marco Pérez Padilla — PAI ULL</h2>
+      </div>
+    </div>
+  </section>
+
+  <main class="app-main">
+    <div class="canvas-col">
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <aside class="controls-col">
+
+      <div class="field">
+        <label class="label is-small">a</label>
+        <div class="control">
+          <input id="input-a" class="input is-small" type="number" min="1" max="20" step="1" value="7">
+        </div>
+        <input id="slider-a" type="range" min="1" max="20" step="1" value="7">
+      </div>
+
+      <div class="field">
+        <label class="label is-small">b</label>
+        <div class="control">
+          <input id="input-b" class="input is-small" type="number" min="1" max="20" step="1" value="6">
+        </div>
+        <input id="slider-b" type="range" min="1" max="20" step="1" value="6">
+      </div>
+
+      <div class="field">
+        <label class="label is-small">φ</label>
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <input id="input-phi" class="input is-small" type="number" min="0" max="6.28" step="0.01" value="1.73">
+          </div>
+          <div class="control">
+            <span class="button is-small is-static">rad</span>
+          </div>
+        </div>
+        <input id="slider-phi" type="range" min="0" max="6.28" step="0.01" value="1.73">
+      </div>
+
+      <div class="field">
+        <label class="label is-small">Animar φ</label>
+        <label class="chk-wrap">
+          <input id="animate-phi" type="checkbox" checked>
+          <div class="chk-box">
+            <div class="chk-mark"></div>
+          </div>
+        </label>
+      </div>
+
+      <div class="field">
+        <label class="label is-small">A</label>
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <input id="input-A" class="input is-small" type="number" min="10" max="250" step="1" value="100">
+          </div>
+          <div class="control">
+            <span class="button is-small is-static">px</span>
+          </div>
+        </div>
+        <input id="slider-A" type="range" min="10" max="250" step="1" value="100">
+      </div>
+
+      <div class="field">
+        <label class="label is-small">B</label>
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <input id="input-B" class="input is-small" type="number" min="10" max="250" step="1" value="100">
+          </div>
+          <div class="control">
+            <span class="button is-small is-static">px</span>
+          </div>
+        </div>
+        <input id="slider-B" type="range" min="10" max="250" step="1" value="100">
+      </div>
+
+      <hr>
+
+      <p class="is-size-7">
+        x(t) = A·sin(a·t + φ)<br>
+        y(t) = B·sin(b·t)
+      </p>
+      <p class="is-size-7 mt-2">
+        Las curvas de Lissajous son trayectorias de un punto sometido a dos movimientos
+        armónicos simples perpendiculares. Su forma depende de la relación a/b y del desfase φ.
+      </p>
+      <p class="is-size-7 mt-2">
+        <a href="https://academo.org/demos/lissajous-curves/" target="_blank">
+          Referencia interactiva
+        </a>
+        ·
+        <a href="https://es.wikipedia.org/wiki/Curva_de_Lissajous" target="_blank">
+          Wikipedia
+        </a>
+      </p>
+
+    </aside>
+  </main>
+
+  <footer class="footer" style="padding: 0.75rem;">
+    <div class="content has-text-centered has-text-white">
+      <p class="is-size-7">
+        Programación de Aplicaciones Interactivas · Grado en Ingeniería Informática · ULL
+      </p>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
