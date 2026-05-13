@@ -1,0 +1,160 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Programación de Aplicaciones Interactivas
+ *
+ * @author Marco Pérez Padilla
+ * @since Apr 23 2026
+ * @desc Bulma personalization for ULL style
+ */
+
+@charset "utf-8";
+
+@use "sass:color";
+
+@use "bulma/sass" with (
+  $family-primary: '"Argentum Sans", sans-serif',
+
+  $primary: #5C068C,
+  $link: #006699,
+
+  $custom-colors: (
+    "ull-purple": (#5C068C, #ffffff)
+  ),
+
+  $grey-dark: #757763,
+  $grey-light: #D0D1CD,
+
+  $body-background-color: #EFF0EB,
+
+  $navbar-background-color: #5C068C,
+  $navbar-item-color: white,
+
+  $footer-background-color: #5C068C,
+  $footer-color: white,
+
+  $control-border-width: 2px,
+  $input-border-color: transparent,
+  $input-shadow: none,
+
+  $widescreen-enabled: false,
+  $fullhd-enabled: false
+);
+
+@import url("https://fonts.cdnfonts.com/css/argentum-sans");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+$ull-purple: #5C068C;
+$ull-gold:   #c8a400;
+
+.navbar-item:hover,
+.navbar-link:hover {
+  background-color: color.adjust(#5C068C, $lightness: -10%) !important;
+  color: white !important;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.canvas-col {
+  flex: 1;
+  padding: 0.5rem;
+  display: flex;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: white;
+  border: 1px solid #ddd;
+}
+
+.controls-col {
+  width: 220px;
+  min-width: 220px;
+  background: #fafafa;
+  padding: 1rem 0.75rem;
+  overflow-y: auto;
+  border-left: 1px solid #ddd;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 0;
+  outline: none;
+  margin: 4px 0 8px;
+  background: linear-gradient(
+    to right,
+    $ull-purple var(--track-fill, 70%),
+    #ccc        var(--track-fill, 70%)
+  );
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border: 2px solid $ull-purple;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: white;
+  border: 2px solid $ull-purple;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.chk-wrap {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chk-wrap input[type="checkbox"] {
+  display: none;
+}
+
+.chk-box {
+  width: 22px;
+  height: 22px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chk-wrap input:checked + .chk-box {
+  background: $ull-gold;
+}
+
+.chk-mark {
+  display: none;
+  width: 6px;
+  height: 11px;
+  border-right: 2.5px solid white;
+  border-bottom: 2.5px solid white;
+  transform: rotate(40deg) translateY(-1px);
+}
+
+.chk-wrap input:checked + .chk-box .chk-mark {
+  display: block;
+}
