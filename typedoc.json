@@ -1,0 +1,23 @@
+{
+  "entryPoints": [
+    "src/exercises/home-work/coordinate-mapper.ts",
+    "src/exercises/home-work/axis-renderer.ts",
+    "src/exercises/home-work/projectile-renderer.ts",
+    "src/exercises/home-work/info-renderer.ts",
+    "src/exercises/home-work/projectile-view.ts",
+    "src/exercises/home-work/projectile-model.ts",
+    "src/exercises/home-work/projectile-controller.ts",
+    "src/exercises/home-work/projectile.ts"
+  ],
+  "out": "src/exercises/home-work/doc",
+  "exclude": ["node_modules/**", "**/uml/**", "**/doc/**", "**/*.css", "**/*.html"],
+  "name": "Práctica 10 - Animations: Projectile Animation",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "theme": "default",
+  "categorizeByGroup": true,
+  "categoryOrder": ["Clases", "Interfaces", "Utilidades", "*"],
+  "gitRevision": "main"
+}
