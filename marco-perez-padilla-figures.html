@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Pérez Padilla - Figuras Geométricas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        canvas {
+            border: 2px solid dimgray;
+            background-color: whitesmoke;
+            margin: 20px auto;
+            display: block;
+        }
+        .info {
+            margin: 10px;
+        }
+        .home-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: steelblue;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .home-link:hover {
+            background-color: dodgerblue;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: mediumseagreen;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generador de Figuras Aleatorias</h1>
+    <canvas id="Canvas" width="800" height="600"></canvas>
+    <div class="info">
+        <p>Haz clic en "Generar" para dibujar nuevas figuras.</p>
+        <button id="generateButton">Generar</button>
+    </div>
+    <a href="index.html" class="home-link">Volver al inicio</a>
+
+    <script type="module" src="dist/home-work/src/main.js"></script>
+</body>
+</html>

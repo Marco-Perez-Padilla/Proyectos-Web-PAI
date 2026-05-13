@@ -1,0 +1,18 @@
+{
+  "entryPoints": [
+    "src/home-work/src/shapes.ts",
+    "src/home-work/src/view.ts",
+    "src/home-work/src/main.ts"
+  ],
+  "out": "docs",
+  "exclude": ["node_modules/**"],
+  "name": "Práctica 7 - Programación Gráfica con Canvas",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "theme": "default",
+  "categorizeByGroup": true,
+  "categoryOrder": ["Clases", "Vista", "Utilidades", "*"],
+  "gitRevision": "main"
+}
