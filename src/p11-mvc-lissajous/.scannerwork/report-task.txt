@@ -1,0 +1,6 @@
+projectKey=pai-lissajous-mvc
+serverUrl=http://localhost:9000
+serverVersion=26.4.0.121862
+dashboardUrl=http://localhost:9000/dashboard?id=pai-lissajous-mvc
+ceTaskId=cfbd644a-ec80-4b8c-8eb9-535d90db99cb
+ceTaskUrl=http://localhost:9000/api/ce/task?id=cfbd644a-ec80-4b8c-8eb9-535d90db99cb

@@ -1,0 +1,27 @@
+{
+  "entryPoints": [
+    "src/exercises/home-work/canvas-renderer.ts",
+    "src/exercises/home-work/grid-renderer.ts",
+    "src/exercises/home-work/controls-binder.ts",
+    "src/exercises/home-work/lissajous-controller.ts",
+    "src/exercises/home-work/lissajous-model.ts",
+    "src/exercises/home-work/lissajous-view.ts",
+    "src/exercises/home-work/curve-renderer.ts",
+    "src/exercises/home-work/parameters.ts",
+    "src/exercises/home-work/lissajous.ts",
+    "src/exercises/home-work/resize-manager.ts",
+    "src/exercises/home-work/slider-updater.ts"
+
+  ],
+  "out": "./src/exercises/home-work/doc",
+  "exclude": ["node_modules/**", "**/uml/**", "**/doc/**", "**/*.css", "**/*.html"],
+  "name": "Práctica 11 - Animations: Projectile Animation",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "theme": "default",
+  "categorizeByGroup": true,
+  "categoryOrder": ["Clases", "Interfaces", "Utilidades", "*"],
+  "gitRevision": "main"
+}
