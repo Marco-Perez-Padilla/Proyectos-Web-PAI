@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "rootDir": "./src",              
+    "outDir": "./dist",
+    "declaration": true,
+    "alwaysStrict": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "useUnknownInCatchVariables": false
+  },
+  "include": ["src/**/*"],            
+  "exclude": [
+    "node_modules",
+    "dist",
+    "docs",
+    "eslint.config.js",              
+    "typedoc.json"
+  ]
+}
