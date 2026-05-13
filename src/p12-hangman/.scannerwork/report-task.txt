@@ -1,0 +1,6 @@
+projectKey=HangmanV2
+serverUrl=http://localhost:9000
+serverVersion=26.4.0.121862
+dashboardUrl=http://localhost:9000/dashboard?id=HangmanV2
+ceTaskId=26f1da50-fdaf-46b9-a409-8dd936257547
+ceTaskUrl=http://localhost:9000/api/ce/task?id=26f1da50-fdaf-46b9-a409-8dd936257547

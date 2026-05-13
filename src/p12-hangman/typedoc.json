@@ -1,0 +1,22 @@
+{
+  "entryPoints": [
+    "src/exercises/home-work/countries.ts",
+    "src/exercises/home-work/hangman.ts",
+    "src/exercises/home-work/hangman-controller.ts",
+    "src/exercises/home-work/hangman-view.ts",
+    "src/exercises/home-work/hangman-build.ts",
+    "src/exercises/home-work/interfaces.ts",
+    "src/exercises/home-work/hangman-dom-builder.ts"
+  ],
+  "out": "dist/src/exercises/home-work/docs",
+  "exclude": ["node_modules/**", "**/uml/**", "**/doc/**", "**/*.css", "**/*.html"],
+  "name": "Práctica 12 - Hangman Game",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "theme": "default",
+  "categorizeByGroup": true,
+  "categoryOrder": ["Clases", "Interfaces", "Utilidades", "*"],
+  "gitRevision": "main"
+}

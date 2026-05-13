@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marco Pérez Padilla – El Ahorcado</title>
+  <link rel="stylesheet" href="/25-26-pai-p12-hangman-ghpages-Marco-Perez-Padilla/ull-bulma.css" />
+  <script type="module" crossorigin src="/25-26-pai-p12-hangman-ghpages-Marco-Perez-Padilla/assets/p12Hangman-CzLZTGO5.js"></script>
+</head>
+<body>
+
+  <!-- ── Navbar ─────────────────────────────────────────────────────── -->
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">PAI 2025-2026</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ───────────────────────────────────────────────────────── -->
+  <section class="hero is-primary is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">El Ahorcado — Países del Mundo</h1>
+        <p class="subtitle">Adivina el nombre del país antes de que se complete la horca.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Botón volver ────────────────────────────────────────────────── -->
+  <section class="section pb-0">
+    <div class="container">
+      <a href="../../../index.html" class="button is-primary is-light is-small">
+        ← Volver al índice
+      </a>
+    </div>
+  </section>
+
+  <!-- ── Zona de juego (rellena por hangman-dom-builder.ts) ─────────── -->
+  <section class="section">
+    <div class="container">
+      <div id="app">
+        <div class="columns is-vcentered">
+          <div class="column is-narrow has-text-centered">
+            <div class="box has-background-grey-lighter p-5">
+              <img id="hangman-image" src="/25-26-pai-p12-hangman-ghpages-Marco-Perez-Padilla/hangman-0.png" alt="Horca" width="200" height="250" />
+            </div>
+          </div>
+          <div class="column">
+            <p class="label is-medium mb-2">Adivina el país:</p>
+            <div id="word-display" class="tags mb-4"></div>
+            <p id="wrong-guess-label" class="has-text-weight-semibold has-text-grey-dark mb-4"></p>
+            <p class="label is-medium mb-2">Elige una letra:</p>
+            <div id="alphabet-grid" class="buttons mb-4"></div>
+            <div id="message-box" class="notification is-hidden mt-4"></div>
+            <button id="new-game-button" class="button is-warning is-fullwidth is-medium mt-3">
+              Nueva partida
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>Programación de Aplicaciones Interactivas · Grado en Ingeniería Informática · ULL</p>
+    </div>
+  </footer>
+
+</body>
+</html>
