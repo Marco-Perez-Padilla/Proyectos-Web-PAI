@@ -1,0 +1,25 @@
+{
+  "display": "Configuration for Graphics Programming in PAI",
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "declaration": false,                     
+    "alwaysStrict": true,                     
+    "strict": true,                           
+    "lib": ["ESNext", "dom"],                 
+    "noImplicitAny": true,                    
+    "noFallthroughCasesInSwitch": true,       
+    "noImplicitReturns": true,                
+    "noUnusedLocals": true,                   
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
