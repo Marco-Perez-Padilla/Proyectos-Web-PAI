@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marco Pérez Padilla – Monte Carlo Integration</title>
+  <script src="https://cdn.jsdelivr.net/npm/mathjs@12.4.0/lib/browser/math.js" defer></script>
+  <script type="module" crossorigin src="/Proyectos-Web-PAI/dist/assets/p12Montecarlo-RM-7AUGU.js"></script>
+  <link rel="modulepreload" crossorigin href="/Proyectos-Web-PAI/dist/assets/modulepreload-polyfill-CyXKLSat.js">
+  <link rel="stylesheet" crossorigin href="/Proyectos-Web-PAI/dist/assets/ull-bulma-DaFEzXAc.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Hero header -->
+    <section class="hero is-primary">
+      <div class="hero-body" style="padding: 0.75rem 1.5rem;">
+        <div class="container">
+          <h1 class="title has-text-white">Integración por Monte Carlo</h1>
+          <h2 class="subtitle has-text-white-ter">Marco Pérez Padilla</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main area -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <!-- Columna izquierda: canvas + controles debajo -->
+          <div class="column is-8">
+            <div class="box">
+              <canvas id="plot-canvas" style="width:100%; aspect-ratio: 4/3;"></canvas>
+            </div>
+            <!-- Controles de entrada colocados debajo del canvas -->
+            <div class="box">
+              <div class="field">
+                <label class="label">Input Function</label>
+                <div class="control">
+                  <input id="expression-input" class="input" type="text" value="x^2" />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">x-Min value</label>
+                <div class="control">
+                  <input id="xmin-input" class="input" type="number" value="-1" step="any" />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">x-Max value</label>
+                <div class="control">
+                  <input id="xmax-input" class="input" type="number" value="1" step="any" />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">y-Max value</label>
+                <div class="control">
+                  <input id="ymax-input" class="input" type="number" value="1" step="any" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna derecha reservada para futuros controles -->
+          <div class="column is-4">
+            <!-- Espacio reservado: aquí se añadirán botones / sliders -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="padding: 0.75rem;">
+      <div class="content has-text-centered has-text-white">
+        <p class="is-size-7">Programación de Aplicaciones Interactivas · ULL</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>s
