@@ -45,13 +45,13 @@ export default defineConfig({
         p12: resolve(__dirname, './src/p12/index.html'),
         p12Game: resolve(__dirname, './src/p12/src/exercises/home-work/game.html'),
         p12UML: resolve(__dirname, './src/p12/src/exercises/home-work/uml/hangman-uml.html'),
+        p12Montecarlo: resolve(__dirname, './src/p12/src/exercises/evaluation-exercise1-title/montecarlo.html'),
 
         // Práctica 13 - CORREGIDO según estructura real
         p13: resolve(__dirname, './src/p13/index.html'),
         p13Balatro: resolve(__dirname, './src/p13/src/exercises/home-work/balatro.html'),
         p13UML: resolve(__dirname, './src/p13/src/exercises/home-work/uml/balatro-uml.html'),
         p13Poker1: resolve(__dirname, './src/p13/src/exercises/Poker1/poker.html'),
-        p13Poker2: resolve(__dirname, './src/p13/src/exercises/Poker2/poker.html'),
       },
     },
   },
