@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+  background: white;
+  color: darkslategray;
+}
+
+header {
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+  color: darkslategray;
+}
+
+header p {
+  margin: 0;
+  color: dimgray;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: darkslategray;
+}
+
+/* Lista de prácticas */
+
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.practica {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  background-color: whitesmoke;
+}
+
+.practica:hover {
+  border-color: steelblue;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: steelblue;
+  background: white;
+  border: 1px solid steelblue;
+  border-radius: 4px;
+  padding: 2px 8px;
+  white-space: nowrap;
+  margin-top: 3px;
+}
+
+.contenido h3 {
+  margin: 0 0 4px 0;
+  font-size: 1rem;
+  color: darkslategray;
+}
+
+.contenido p {
+  margin: 0 0 10px 0;
+  color: dimgray;
+  font-size: 0.9rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 7px 14px;
+  background-color: steelblue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background-color: dodgerblue;
+}
