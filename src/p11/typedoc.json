@@ -13,7 +13,7 @@
     "src/exercises/home-work/slider-updater.ts"
 
   ],
-  "out": "./src/exercises/home-work/doc",
+  "out": "../../dist/src/p11/src/exercises/home-work/doc",
   "exclude": ["node_modules/**", "**/uml/**", "**/doc/**", "**/*.css", "**/*.html"],
   "name": "Práctica 11 - Animations: Projectile Animation",
   "includeVersion": true,

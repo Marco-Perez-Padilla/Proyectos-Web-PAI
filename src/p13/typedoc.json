@@ -20,7 +20,7 @@
     "src/exercises/Poker1/html-element-manager.ts",
     "src/exercises/Poker1/interfaces.ts"
   ],
-  "out": "dist/src/exercises/docs",
+  "out": "../../dist/src/p13/src/exercises/docs",
   "exclude": ["node_modules/**", "**/uml/**", "**/doc/**", "**/*.css", "**/*.html"],
   "name": "Práctica 13 - Balatro & Poker",
   "includeVersion": true,

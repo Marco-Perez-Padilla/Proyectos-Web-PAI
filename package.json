@@ -35,7 +35,7 @@
     "dev:server:p11": "cd src/p11 && node scripts/dev-server.js",
     "run:p11": "cd src/p11 && npm run run",
     "sonar:p11": "cd src/p11 && npm run sonar",
-    "build:all": "npm run build:p07 && npm run build:p08 && npm run build:p09 && npm run build:p10 && npm run build:p11 && npm run build:p12 && npm run build:p13 && npm run build && npm run docs",
+    "build:all": "npm run build:p07 && npm run build:p08 && npm run build:p09 && npm run build:p10 && npm run build:p11 && npm run build:p12 && npm run build:p13 && npm run build && npm run docs:all",
     "docs:all": "npm run docs:p07 && npm run docs:p08 && npm run docs:p09 && npm run docs:p10 && npm run docs:p11 && npm run docs:p12 && npm run docs:p13",
     "build": "vite build"
   },
